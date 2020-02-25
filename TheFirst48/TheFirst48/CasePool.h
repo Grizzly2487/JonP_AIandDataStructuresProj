@@ -3,5 +3,19 @@
 
 class CasePool
 {
+private:
+
+
+
+protected:
+
+
+
+public:
+
+	CasePool();
+	~CasePool();
+
+
 
 };
