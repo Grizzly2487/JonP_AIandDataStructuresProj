@@ -16,23 +16,101 @@
     <Filter Include="Source Files\Managers">
       <UniqueIdentifier>{19cb2ff9-ec26-4245-aa1d-6d75a914f50f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{bd8ff28d-19ef-4d61-86b9-2f5be28b01b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scenes">
+      <UniqueIdentifier>{f6788ce0-1f51-4b1b-a0da-251f6fe84d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{c88cd497-d134-4056-aeea-c84fed34121e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pools">
+      <UniqueIdentifier>{ef6bc362-6774-4146-8a99-de1b6850f909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pools">
+      <UniqueIdentifier>{19a93ad5-a8f8-4261-b97c-48449f082a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FSMs">
+      <UniqueIdentifier>{562daee4-c951-425d-ac58-198bac6137d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FSMs">
+      <UniqueIdentifier>{8c2a8e57-ec90-4c51-ba89-8278388ec274}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StartScreen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>Source Files\Managers</Filter>
     </ClCompile>
+    <ClCompile Include="Suspects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScreen.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="CaseManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Cases.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CasePool.cpp">
+      <Filter>Source Files\Pools</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectPool.cpp">
+      <Filter>Source Files\Pools</Filter>
+    </ClCompile>
+    <ClCompile Include="Emotions.cpp">
+      <Filter>Source Files\FSMs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StartScreen.h">
+    <ClInclude Include="Suspects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScreen.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="CaseManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CasePool.h">
+      <Filter>Header Files\Pools</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectPool.h">
+      <Filter>Header Files\Pools</Filter>
+    </ClInclude>
+    <ClInclude Include="Emotions.h">
+      <Filter>Header Files\FSMs</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
