@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Managers">
-      <UniqueIdentifier>{19cb2ff9-ec26-4245-aa1d-6d75a914f50f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Managers">
-      <UniqueIdentifier>{bd8ff28d-19ef-4d61-86b9-2f5be28b01b2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Scenes">
       <UniqueIdentifier>{f6788ce0-1f51-4b1b-a0da-251f6fe84d29}</UniqueIdentifier>
     </Filter>
@@ -37,23 +31,11 @@
     <Filter Include="Header Files\FSMs">
       <UniqueIdentifier>{8c2a8e57-ec90-4c51-ba89-8278388ec274}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{a47297c1-9df8-4cb2-b957-a9db5c824277}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="Suspects.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CaseManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="Cases.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CasePool.cpp">
       <Filter>Source Files\Pools</Filter>
     </ClCompile>
@@ -63,29 +45,23 @@
     <ClCompile Include="Emotions.cpp">
       <Filter>Source Files\FSMs</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="StartScreen.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Cases.cpp">
+      <Filter>Source Files\Pools</Filter>
+    </ClCompile>
+    <ClCompile Include="Suspects.cpp">
+      <Filter>Source Files\Pools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Suspects.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="CaseManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Cases.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CasePool.h">
       <Filter>Header Files\Pools</Filter>
     </ClInclude>
@@ -100,6 +76,15 @@
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScreen.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cases.h">
+      <Filter>Header Files\Pools</Filter>
+    </ClInclude>
+    <ClInclude Include="Suspects.h">
+      <Filter>Header Files\Pools</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

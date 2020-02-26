@@ -5,7 +5,8 @@ class Emotions
 {
 private:
 
-
+	LinkList<Emotions*> emotions;
+	LinkList<Emotions*>::Iterator iterator;
 
 protected:
 
