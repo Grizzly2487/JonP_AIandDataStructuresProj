@@ -140,7 +140,6 @@
   <ItemGroup>
     <ClCompile Include="CasePool.cpp" />
     <ClCompile Include="Cases.cpp" />
-    <ClCompile Include="Emotions.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StartScreen.cpp" />
@@ -150,7 +149,7 @@
   <ItemGroup>
     <ClInclude Include="CasePool.h" />
     <ClInclude Include="Cases.h" />
-    <ClInclude Include="Emotions.h" />
+    <ClInclude Include="StateMachines.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="StartScreen.h" />

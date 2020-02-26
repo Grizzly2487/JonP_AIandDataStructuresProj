@@ -1,9 +1,11 @@
 #include "Emotions.h"
 
-Emotions::Emotions()
+void Emotions::EmotionsList()
 {
+
 }
 
-Emotions::~Emotions()
-{
-}
+
+Emotions::Emotions(){}
+
+Emotions::~Emotions(){}

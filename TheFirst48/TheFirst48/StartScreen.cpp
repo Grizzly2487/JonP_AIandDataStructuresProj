@@ -12,9 +12,10 @@ StartScreen::StartScreen()
 		cout << "\tWhile most cases are solved within the first 48, some go on days, weeks, months, or even years after..\n";
 		cout << "\n\n";
 		cout << "\tAs a detective, you have only 48 hours, before the trail goes cold..\n";
-		cout << "\n\n";
-		cout << "\t\tThe First 48\n\n";
-		cout << "\t\tPRESS 0 TO CONTINUE\n\n";
+		cout << "\n\n\n";
+		cout << "\t\t\t\t ______________\n";
+		cout << "\t\t\t\t| The First 48 |\n\n\n\n";
+		cout << "\t\t\t\tPRESS 0 TO CONTINUE\n\n";
 		cin >> changeScreen;
 
 		switch (changeScreen)

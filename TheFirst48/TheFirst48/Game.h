@@ -19,8 +19,7 @@ protected:
 
 public:
 
-	int getChoice();
-	int setChoice(int choice);
+
 	inline bool getIsPlaying()const { return this->isPlaying; }
 	bool setIsPlaying(bool changeIsPlaying);
 
