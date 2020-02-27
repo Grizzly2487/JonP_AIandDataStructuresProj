@@ -1,0 +1,159 @@
+First 48 text game.
+
+your a detective trying to solve the case within the first 48 hours (48 turns equivelant)
+3 case scenarios with 3 outcomes, each having a predetermined killer that is 1 of the 6 suspects.
+
+Switch Case for player choices (question suspect 1/2/3/4/5/6,accuse of being liar * 6
+			       (costs 8 turns if wrong ontop of 1 turn already taken),change suspect * 6, and solve case)
+
+Suspects with dialogue and clues (boolean to say if they are a liar or not. If player guesses they are, 
+				change the dialogue/get clue.If they are not and player said they were, 
+				loose 8 turns. Also have the killer boolean randomized 
+				between 3 predetermined killers for each of the 3 cases possible.)
+
+Suspects will be put into lists for each case.
+3 suspects will be randomly chosen to be liars and 1 of the 3 will be chosen to be the killer.
+Killer is chosen by - randomizeKiller(){ //randomnly pick one of the three liars chosen as the killer using random range}
+
+Suspects will have a FSM for their emotions and will make the Suspects AI choose different dialogue accordingly. 
+Have a weight system for decisions of AI.
+
+Each liar has a clue with them to solve the case. And a chance to be the killer themselves.
+If the liar is a killer and player accused correctly, solve the case. If the liar is not the killer and player accused,
+change dialoge and give the clue.
+
+Player solves the case by choosing one of the suspects as the killer if they have not already accused one of them of lieing 
+and was the killer.If all 3 clues are gathered the killer will be cought automaticly and solve the case.
+
+Case 1: Found Cheerleader:
+	Cheerleader found buy one of the suspects, suspects are 3 classmates and 3 fellow cheerleaders.
+suspect 1(Butch)
+Liar Dialogue: I didnt see nuthin Boomer...
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue: 
+Accused Dialogue:
+
+suspect 2(Dutch)
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+
+suspect 3(Nyx)
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+
+suspect 4(Cheerleader1):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 5(Cheerleader2):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 6(Cheerleader3):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+Case 2: The Playboy:
+	Playboy slept with all 6 suspects.
+suspect 1(Betty):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 2(Veronica):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 3(Jessica):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 4(Jennifer):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 5(Trixxy):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 6(Bo-Pepper):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+Case 3: Second Opinion:
+	Psychologist kills people and suspects are his patients.
+suspect 1(Wade):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 2(Slade):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 3(Rae):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 4(Flae):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 5(Moriarty):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
+suspect 6(Holmes):
+Liar Dialogue:
+Accused Dialogue:
+IsKiller:
+NotLiar Dialogue:
+Accused Dialogue:
+ 
