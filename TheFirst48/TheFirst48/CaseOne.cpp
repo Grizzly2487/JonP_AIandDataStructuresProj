@@ -1,5 +1,12 @@
 #include "CaseOne.h"
 
+using namespace std;
+
+CaseOne::CaseOne() 
+{
+	currentCase = CASEONE;
+	cout << "Case One: \n";
+}
 void CaseOne::CaseDialogue()
 {
 }
@@ -172,10 +179,6 @@ void CaseOne::Suspect6NKDialogue()
 {
 }
 
-CaseOne::CaseOne()
-{
-}
 
-CaseOne::~CaseOne()
-{
-}
+
+CaseOne::~CaseOne(){}

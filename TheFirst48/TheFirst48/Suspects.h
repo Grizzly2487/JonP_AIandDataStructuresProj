@@ -1,11 +1,20 @@
 #pragma once
-#include "LinkList.h"
+#include <iostream>
+#include <string>
 #include "StateMachines.h"
+#include "CaseOne.h"
+#include "CaseTwo.h"
+#include "CaseThree.h"
 
-
+using namespace std;
 class Suspects
 {
 private:
+
+
+
+protected:
+	string name;
 
 	bool isLiar = false;
 	bool isKiller = false;
@@ -13,11 +22,8 @@ private:
 	Emotions defaultEmotion = NEUTRAL;
 	Emotions currentEmotion;
 	Emotions previousEmotion;
-	
-	Emotions emotions;
 
-protected:
-
+	Emotions* emotions;
 
 public:
 

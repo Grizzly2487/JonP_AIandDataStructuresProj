@@ -1,9 +1,10 @@
 #include "StartScreen.h"
 
 
-
+using namespace std;
 StartScreen::StartScreen()
 {
+	
 	while (isStartScreen)
 	{
 		cout << "\n\n";
@@ -30,6 +31,7 @@ StartScreen::StartScreen()
 			break;
 		}
 	}
+	system("CLS");
 }
 
 StartScreen::~StartScreen()

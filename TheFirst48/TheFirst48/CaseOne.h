@@ -3,7 +3,7 @@
 class CaseOne : public Cases
 {
 	private:
-
+		
 
 	protected:
 

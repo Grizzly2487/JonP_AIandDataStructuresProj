@@ -1,17 +1,22 @@
 #pragma once
 #include "SuspectPool.h"
+#include "StateMachines.h"
+#include <iostream>
+#include <string>
+
+
+
+
 class Cases
 {
 private:
-
-
+	
+	
 protected:
 
-	bool isCase1 = false;
-	bool isCase2 = false;
-	bool isCase3 = false;
-	bool isSolved = false;
+	Case currentCase = DEFAULT;
 
+	bool isSolved = false;
 
 public:
 
@@ -73,6 +78,9 @@ public:
 	virtual void Suspect4NKDialogue();
 	virtual void Suspect5NKDialogue();
 	virtual void Suspect6NKDialogue();
+
+	virtual bool GetCase();
+	virtual bool SetCase(bool newCase);
 
 	Cases();
 	~Cases();

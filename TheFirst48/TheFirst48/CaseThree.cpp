@@ -1,5 +1,14 @@
 #include "CaseThree.h"
 
+
+
+
+
+CaseThree::CaseThree()
+{
+	currentCase = CASETHREE;
+}
+
 void CaseThree::CaseDialogue()
 {
 }
@@ -169,10 +178,6 @@ void CaseThree::Suspect5NKDialogue()
 }
 
 void CaseThree::Suspect6NKDialogue()
-{
-}
-
-CaseThree::CaseThree()
 {
 }
 

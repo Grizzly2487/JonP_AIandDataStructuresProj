@@ -146,6 +146,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StartScreen.cpp" />
+    <ClCompile Include="SuspectOne.cpp" />
     <ClCompile Include="SuspectPool.cpp" />
     <ClCompile Include="Suspects.cpp" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="StartScreen.h" />
+    <ClInclude Include="SuspectOne.h" />
     <ClInclude Include="SuspectPool.h" />
     <ClInclude Include="Suspects.h" />
   </ItemGroup>

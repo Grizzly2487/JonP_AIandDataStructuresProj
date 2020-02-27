@@ -9,8 +9,9 @@ enum Emotions
 	SAD,
 	SCARED
 }; 
-enum Cases
+enum Case
 {
+	DEFAULT,
 	CASEONE,
 	CASETWO,
 	CASETHREE

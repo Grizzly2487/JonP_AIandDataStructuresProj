@@ -1,5 +1,13 @@
 #include "CaseTwo.h"
 
+
+
+
+CaseTwo::CaseTwo()
+{
+	currentCase = CASETWO;
+}
+
 void CaseTwo::CaseDialogue()
 {
 }
@@ -172,9 +180,7 @@ void CaseTwo::Suspect6NKDialogue()
 {
 }
 
-CaseTwo::CaseTwo()
-{
-}
+
 
 CaseTwo::~CaseTwo()
 {

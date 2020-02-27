@@ -131,6 +131,16 @@ void Cases::Suspect5NKDialogue()
 void Cases::Suspect6NKDialogue()
 {}
 
+bool Cases::GetCase()
+{
+	return false;
+}
+
+bool Cases::SetCase(bool newCase)
+{
+	return false;
+}
+
 Cases::Cases()
 {}
 

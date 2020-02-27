@@ -2,6 +2,12 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include "CaseOne.h"
+#include "CaseTwo.h"
+#include "CaseThree.h"
+
+
+
 
 using namespace std;
 

@@ -75,6 +75,9 @@
     <ClCompile Include="CaseThree.cpp">
       <Filter>Source Files\Cases</Filter>
     </ClCompile>
+    <ClCompile Include="SuspectOne.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SuspectPool.h">
@@ -109,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="CaseThree.h">
       <Filter>Header Files\Cases</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectOne.h">
+      <Filter>Header Files\Suspects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
