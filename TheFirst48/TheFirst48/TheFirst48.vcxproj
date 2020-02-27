@@ -138,29 +138,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CaseOne.cpp" />
     <ClCompile Include="CasePool.cpp" />
     <ClCompile Include="Cases.cpp" />
-    <ClCompile Include="CaseThree.cpp" />
-    <ClCompile Include="CaseTwo.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StartScreen.cpp" />
-    <ClCompile Include="SuspectOne.cpp" />
     <ClCompile Include="SuspectPool.cpp" />
     <ClCompile Include="Suspects.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CaseOne.h" />
     <ClInclude Include="CasePool.h" />
     <ClInclude Include="Cases.h" />
-    <ClInclude Include="CaseThree.h" />
-    <ClInclude Include="CaseTwo.h" />
     <ClInclude Include="StateMachines.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="StartScreen.h" />
-    <ClInclude Include="SuspectOne.h" />
     <ClInclude Include="SuspectPool.h" />
     <ClInclude Include="Suspects.h" />
   </ItemGroup>

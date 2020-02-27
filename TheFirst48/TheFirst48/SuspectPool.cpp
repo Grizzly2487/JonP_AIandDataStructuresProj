@@ -10,6 +10,7 @@ SuspectPool* SuspectPool::GetInstance()
 
 SuspectPool::SuspectPool()
 {
+
 }
 
 SuspectPool::~SuspectPool()

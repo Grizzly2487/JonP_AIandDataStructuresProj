@@ -3,142 +3,702 @@
 using namespace std;
 
 void Cases::CaseDialogue()
-{}
-
-void Cases::SolvedDialogue()
-{}
-
-void Cases::NeutralDialogue()
-{}
-
-void Cases::AnxiousDialogue()
-{}
-
-void Cases::AngryDialogue()
-{}
-
-void Cases::SadDialogue()
-{}
-
-void Cases::ScaredDialogue()
-{}
-
-void Cases::Suspect1Dialogue()
-{}
-
-void Cases::Suspect2Dialogue()
-{}
-
-void Cases::Suspect3Dialogue()
-{}
-
-void Cases::Suspect4Dialogue()
-{}
-
-void Cases::Suspect5Dialogue()
-{}
-
-void Cases::Suspect6Dialogue()
-{}
-
-void Cases::Suspect1LiarDialogue()
-{}
-
-void Cases::Suspect2LiarDialogue()
-{}
-
-void Cases::Suspect3LiarDialogue()
-{}
-
-void Cases::Suspect4LiarDialogue()
-{}
-
-void Cases::Suspect5LiarDialogue()
-{}
-
-void Cases::Suspect6LiarDialogue()
-{}
-
-void Cases::Suspect1AccusedDialogue()
-{}
-
-void Cases::Suspect2AccusedDialogue()
-{}
-
-void Cases::Suspect3AccusedDialogue()
-{}
-
-void Cases::Suspect4AccusedDialogue()
-{}
-
-void Cases::Suspect5AccusedDialogue()
-{}
-
-void Cases::Suspect6AccusedDialogue()
-{}
-
-void Cases::Suspect1LADialogue()
-{}
-
-void Cases::Suspect2LADialogue()
-{}
-
-void Cases::Suspect3LADialogue()
-{}
-
-void Cases::Suspect4LADialogue()
-{}
-
-void Cases::Suspect5LADialogue()
-{}
-
-void Cases::Suspect6LADialogue()
-{}
-
-void Cases::Suspect1KillerDialogue()
-{}
-
-void Cases::Suspect2KillerDialogue()
-{}
-
-void Cases::Suspect3KillerDialogue()
-{}
-
-void Cases::Suspect4KillerDialogue()
-{}
-
-void Cases::Suspect5KillerDialogue()
-{}
-
-void Cases::Suspect6KillerDialogue()
-{}
-
-void Cases::Suspect1NKDialogue()
-{}
-
-void Cases::Suspect2NKDialogue()
-{}
-
-void Cases::Suspect3NKDialogue()
-{}
-
-void Cases::Suspect4NKDialogue()
-{}
-
-void Cases::Suspect5NKDialogue()
-{}
-
-void Cases::Suspect6NKDialogue()
-{}
-
-bool Cases::GetCase()
 {
-	return false;
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
 }
 
-bool Cases::SetCase(bool newCase)
+void Cases::SolvedDialogue()
 {
-	return false;
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::NeutralDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::AnxiousDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::AngryDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::SadDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::ScaredDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6Dialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6LiarDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6AccusedDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6LADialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6KillerDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect1NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect2NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect3NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect4NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect5NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Cases::Suspect6NKDialogue()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+Case Cases::GetCase()
+{
+	return currentCase;
+}
+
+Case Cases::SetCase(Case newCase)
+{
+	currentCase = newCase;
+	return currentCase;
 }
 
 Cases::Cases()

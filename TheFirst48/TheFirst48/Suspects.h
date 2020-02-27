@@ -2,9 +2,7 @@
 #include <iostream>
 #include <string>
 #include "StateMachines.h"
-#include "CaseOne.h"
-#include "CaseTwo.h"
-#include "CaseThree.h"
+
 
 using namespace std;
 class Suspects
@@ -27,8 +25,15 @@ protected:
 
 public:
 
-	virtual Emotions GetEmotion();
-	virtual Emotions SetEmotion(Emotions changeEmotion);
+	Emotions GetEmotion();
+	Emotions SetEmotion(Emotions changeEmotion);
+
+	SuspectList SuspectOne();
+	SuspectList SuspectTwo();
+	SuspectList SuspectThree();
+	SuspectList SuspectFour();
+	SuspectList SuspectFive();
+	SuspectList SuspectSix();
 
 	Suspects();
 	~Suspects();
