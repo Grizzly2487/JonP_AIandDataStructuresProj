@@ -10,7 +10,9 @@ CasePool* CasePool::GetInstance()
 
 CasePool::CasePool()
 {
-	
+	cases.insert(iterator, new CaseOne());
+	cases.insert(iterator, new CaseTwo());
+	cases.insert(iterator, new CaseThree());
 }
 
 CasePool::~CasePool()

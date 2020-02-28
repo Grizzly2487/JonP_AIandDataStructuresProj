@@ -1,44 +1,46 @@
 #include "Suspects.h"
 
-Emotions Suspects::GetEmotion()
+void Suspects::GetEmotion()
 {
-	return currentEmotion;
+	cout << currentEmotion << endl;
+}
+
+void Suspects::GetPreviousEmotion()
+{
+	cout << previousEmotion << endl;
 }
 
 Emotions Suspects::SetEmotion(Emotions changeEmotion)
 {
+	previousEmotion = currentEmotion;
 	currentEmotion = changeEmotion;
 	return currentEmotion;
 }
 
-SuspectList Suspects::SuspectOne()
-{
-	return SUSONE;
-}
 
-SuspectList Suspects::SuspectTwo()
-{
-	return SUSTWO;
-}
 
-SuspectList Suspects::SuspectThree()
+void Suspects::EmotionDialogue()
 {
-	return SUSTHREE;
-}
-
-SuspectList Suspects::SuspectFour()
-{
-	return SUSFOUR;
-}
-
-SuspectList Suspects::SuspectFive()
-{
-	return SUSFIVE;
-}
-
-SuspectList Suspects::SuspectSix()
-{
-	return SUSSIX;
+	if (NEUTRAL)
+	{
+		cout << "NEUTRAL\n";
+	}
+	else if (ANXIOUS)
+	{
+		cout << "ANXIOUS\n";
+	}
+	else if (ANGRY)
+	{
+		cout << "ANGRY\n";
+	}
+	else if (SAD)
+	{
+		cout << "SAD\n";
+	}
+	else if (SCARED)
+	{
+		cout << "SCARED\n";
+	}
 }
 
 Suspects::Suspects()

@@ -45,6 +45,86 @@ Game::Game()
 
 }
 
+void Game::ObserveScene()
+{
+	if (CASEONE)
+	{
+		C1->CaseDialogue();
+	}
+	else if (CASETWO)
+	{
+		C2->CaseDialogue();
+	}
+	else if (CASETHREE)
+	{
+		C3->CaseDialogue();
+	}
+}
+
+void Game::QuestionSuspect()
+{
+	if (CASEONE)
+	{
+		C1->NeutralDialogue();
+	}
+	else if (CASETWO)
+	{
+		C2->NeutralDialogue();
+	}
+	else if (CASETHREE)
+	{
+		C3->NeutralDialogue();
+	}
+}
+
+void Game::CheckEmotion()
+{
+	if (CASEONE)
+	{
+		
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Game::Accuse()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
+void Game::SolveCase()
+{
+	if (CASEONE)
+	{
+
+	}
+	else if (CASETWO)
+	{
+
+	}
+	else if (CASETHREE)
+	{
+
+	}
+}
+
 bool Game::setIsPlaying(bool changeIsPlaying)
 {
 	isPlaying = changeIsPlaying;

@@ -1,6 +1,8 @@
 #pragma once
 #include "LinkList.h"
-#include "Cases.h"
+#include "CaseOne.h"
+#include "CaseTwo.h"
+#include "CaseThree.h"
 
 class CasePool
 {

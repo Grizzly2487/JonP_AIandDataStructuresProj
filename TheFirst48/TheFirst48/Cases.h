@@ -21,66 +21,26 @@ protected:
 public:
 
 	//Dialogue
-	void CaseDialogue();
-	void SolvedDialogue();
-
-	//Emotion Dialogue
-	void NeutralDialogue();
-	void AnxiousDialogue();
-	void AngryDialogue();
-	void SadDialogue();
-	void ScaredDialogue();
+	virtual void CaseDialogue();
+	virtual void SolvedDialogue();
 
 	//Suspect Main Dialogue
-	void Suspect1Dialogue();
-	void Suspect2Dialogue();
-	void Suspect3Dialogue();
-	void Suspect4Dialogue();
-	void Suspect5Dialogue();
-	void Suspect6Dialogue();
+	virtual void NeutralDialogue();
 
 	//Suspect isLiar Dialogue
-	void Suspect1LiarDialogue();
-	void Suspect2LiarDialogue();
-	void Suspect3LiarDialogue();
-	void Suspect4LiarDialogue();
-	void Suspect5LiarDialogue();
-	void Suspect6LiarDialogue();
+	virtual void LiarDialogue();
 
 	//Suspect Accused and !isLiar Dialogue
-	void Suspect1AccusedDialogue();
-	void Suspect2AccusedDialogue();
-	void Suspect3AccusedDialogue();
-	void Suspect4AccusedDialogue();
-	void Suspect5AccusedDialogue();
-	void Suspect6AccusedDialogue();
+	virtual void AccusedDialogue();
 
 	//Suspect Accused and isLiar Dialogue
-	void Suspect1LADialogue();
-	void Suspect2LADialogue();
-	void Suspect3LADialogue();
-	void Suspect4LADialogue();
-	void Suspect5LADialogue();
-	void Suspect6LADialogue();
+	virtual void AccusedLiarDialogue();
 
-	//Accused and isKiller Dialogue
-	void Suspect1KillerDialogue();
-	void Suspect2KillerDialogue();
-	void Suspect3KillerDialogue();
-	void Suspect4KillerDialogue();
-	void Suspect5KillerDialogue();
-	void Suspect6KillerDialogue();
+	//Suspect Accused and isKiller Dialogue
+	virtual void KillerDialogue();
 
-	//Accused and !isKiller Dialogue
-	void Suspect1NKDialogue();
-	void Suspect2NKDialogue();
-	void Suspect3NKDialogue();
-	void Suspect4NKDialogue();
-	void Suspect5NKDialogue();
-	void Suspect6NKDialogue();
-
-	Case GetCase();
-	Case SetCase(Case newCase);
+	//Suspect Accused and !isKiller Dialogue
+	virtual void NotKillerDialogue();
 
 	Cases();
 	~Cases();

@@ -66,6 +66,15 @@
     <ClCompile Include="Suspects.cpp">
       <Filter>Source Files\Suspects</Filter>
     </ClCompile>
+    <ClCompile Include="CaseOne.cpp">
+      <Filter>Source Files\Cases</Filter>
+    </ClCompile>
+    <ClCompile Include="CaseTwo.cpp">
+      <Filter>Source Files\Cases</Filter>
+    </ClCompile>
+    <ClCompile Include="CaseThree.cpp">
+      <Filter>Source Files\Cases</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SuspectPool.h">
@@ -91,6 +100,15 @@
     </ClInclude>
     <ClInclude Include="StateMachines.h">
       <Filter>Header Files\FSMs</Filter>
+    </ClInclude>
+    <ClInclude Include="CaseOne.h">
+      <Filter>Header Files\Cases</Filter>
+    </ClInclude>
+    <ClInclude Include="CaseTwo.h">
+      <Filter>Header Files\Cases</Filter>
+    </ClInclude>
+    <ClInclude Include="CaseThree.h">
+      <Filter>Header Files\Cases</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

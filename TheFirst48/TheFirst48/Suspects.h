@@ -19,21 +19,18 @@ protected:
 
 	Emotions defaultEmotion = NEUTRAL;
 	Emotions currentEmotion;
-	Emotions previousEmotion;
+	Emotions previousEmotion = NEUTRAL;
 
 	Emotions* emotions;
 
 public:
 
-	Emotions GetEmotion();
+	void GetEmotion();
+	void GetPreviousEmotion();
 	Emotions SetEmotion(Emotions changeEmotion);
 
-	SuspectList SuspectOne();
-	SuspectList SuspectTwo();
-	SuspectList SuspectThree();
-	SuspectList SuspectFour();
-	SuspectList SuspectFive();
-	SuspectList SuspectSix();
+	//Emotion Dialogue
+	virtual void EmotionDialogue();
 
 	Suspects();
 	~Suspects();
