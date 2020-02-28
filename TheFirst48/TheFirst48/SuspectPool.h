@@ -1,6 +1,11 @@
 #pragma once
 #include "LinkList.h"
-#include "Suspects.h"
+#include "SuspectOne.h"
+#include "SuspectTwo.h"
+#include "SuspectThree.h"
+#include "SuspectFour.h"
+#include "SuspectFive.h"
+#include "SuspectSix.h"
 
 
 

@@ -75,6 +75,24 @@
     <ClCompile Include="CaseThree.cpp">
       <Filter>Source Files\Cases</Filter>
     </ClCompile>
+    <ClCompile Include="SuspectFive.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectFour.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectOne.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectSix.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectThree.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
+    <ClCompile Include="SuspectTwo.cpp">
+      <Filter>Source Files\Suspects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SuspectPool.h">
@@ -109,6 +127,24 @@
     </ClInclude>
     <ClInclude Include="CaseThree.h">
       <Filter>Header Files\Cases</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectFive.h">
+      <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectFour.h">
+      <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectOne.h">
+      <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectSix.h">
+      <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectThree.h">
+      <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="SuspectTwo.h">
+      <Filter>Header Files\Suspects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

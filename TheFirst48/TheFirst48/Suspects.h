@@ -20,8 +20,9 @@ protected:
 	Emotions defaultEmotion = NEUTRAL;
 	Emotions currentEmotion;
 	Emotions previousEmotion = NEUTRAL;
-
 	Emotions* emotions;
+
+	SuspectList suspect = DEFAULT;
 
 public:
 

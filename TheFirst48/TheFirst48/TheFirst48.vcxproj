@@ -146,8 +146,14 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StartScreen.cpp" />
+    <ClCompile Include="SuspectFive.cpp" />
+    <ClCompile Include="SuspectFour.cpp" />
+    <ClCompile Include="SuspectOne.cpp" />
     <ClCompile Include="SuspectPool.cpp" />
     <ClCompile Include="Suspects.cpp" />
+    <ClCompile Include="SuspectSix.cpp" />
+    <ClCompile Include="SuspectThree.cpp" />
+    <ClCompile Include="SuspectTwo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CaseOne.h" />
@@ -159,8 +165,14 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkList.h" />
     <ClInclude Include="StartScreen.h" />
+    <ClInclude Include="SuspectFive.h" />
+    <ClInclude Include="SuspectFour.h" />
+    <ClInclude Include="SuspectOne.h" />
     <ClInclude Include="SuspectPool.h" />
     <ClInclude Include="Suspects.h" />
+    <ClInclude Include="SuspectSix.h" />
+    <ClInclude Include="SuspectThree.h" />
+    <ClInclude Include="SuspectTwo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,6 +18,7 @@ enum Case
 };
 enum SuspectList
 {
+	DEFAULT,
 	SUSONE,
 	SUSTWO,
 	SUSTHREE,

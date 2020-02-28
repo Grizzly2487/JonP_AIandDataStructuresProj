@@ -7,7 +7,7 @@ void CaseOne::CaseDialogue()
 
 void CaseOne::SolvedDialogue()
 {
-	cout << "Insert Dialogue Here\n";
+	cout << "Insert Solved Dialogue Here\n";
 }
 
 void CaseOne::NeutralDialogue()
