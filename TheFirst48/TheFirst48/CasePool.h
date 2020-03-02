@@ -20,6 +20,8 @@ protected:
 public:
 
 	static CasePool* GetInstance();
+	Cases* GetCaseIterator();
+
 
 	CasePool();
 	~CasePool();

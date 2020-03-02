@@ -1,12 +1,16 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <conio.h>
 #include <ctime>
+#include "CasePool.h"
+#include "SuspectPool.h"
 #include "CaseOne.h"
 #include "CaseTwo.h"
 #include "CaseThree.h"
-
-
+#define KEY_LEFT 75
+#define KEY_RIGHT 77
+//#define KEY_ENTER "insert number here"
 
 
 using namespace std;
@@ -15,13 +19,18 @@ class Game
 {
 
 private:
-
-	CaseOne* C1;
-	CaseTwo* C2;
-	CaseThree* C3;
 	
+	CasePool* casePool;
+	SuspectPool* suspectPool;
+
+	Cases* currentCase;
+	
+	int suspect;
 	int choice;
 	bool isPlaying = true;
+	bool isChoosingQ = true;
+	bool isChoosingA = true;
+	bool isChoosingS = true;
 	static Game* instance;
 
 protected:
@@ -30,7 +39,6 @@ protected:
 public:
 
 	//Detective Functions
-	void ObserveScene();
 	void QuestionSuspect();
 	void CheckEmotion();
 	void Accuse();

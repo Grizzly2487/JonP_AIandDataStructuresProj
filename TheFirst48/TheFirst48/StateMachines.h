@@ -11,14 +11,14 @@ enum Emotions
 }; 
 enum Case
 {
-	DEFAULT,
+	DEFAULTCASE,
 	CASEONE,
 	CASETWO,
 	CASETHREE
 };
 enum SuspectList
 {
-	DEFAULT,
+	DEFAULTSUSPECT,
 	SUSONE,
 	SUSTWO,
 	SUSTHREE,

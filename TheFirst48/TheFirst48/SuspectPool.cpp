@@ -1,5 +1,7 @@
 #include "SuspectPool.h"
 
+SuspectPool* SuspectPool::instance = NULL;
+
 SuspectPool* SuspectPool::GetInstance()
 {
 	if (instance == NULL)
@@ -8,16 +10,24 @@ SuspectPool* SuspectPool::GetInstance()
 	return instance;
 }
 
+Suspects* SuspectPool::GetCaseIterator()
+{
+	return *iterator;
+}
+
 SuspectPool::SuspectPool()
 {
-	suspects.insert(iterator, new SuspectOne());
-	suspects.insert(iterator, new SuspectTwo());
-	suspects.insert(iterator, new SuspectThree());
-	suspects.insert(iterator, new SuspectFour());
-	suspects.insert(iterator, new SuspectFive());
-	suspects.insert(iterator, new SuspectSix());
+	suspects.push_back(new SuspectOne());
+	suspects.push_back(new SuspectTwo());
+	suspects.push_back(new SuspectThree());
+	suspects.push_back(new SuspectFour());
+	suspects.push_back(new SuspectFive());
+	suspects.push_back(new SuspectSix());
+
+	iterator = suspects.begin();
 }
 
 SuspectPool::~SuspectPool()
 {
+
 }

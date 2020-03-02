@@ -34,6 +34,7 @@ void CaseThree::NotKillerDialogue()
 
 CaseThree::CaseThree()
 {
+	cout << "Hello World 3\n";
 }
 
 CaseThree::~CaseThree()

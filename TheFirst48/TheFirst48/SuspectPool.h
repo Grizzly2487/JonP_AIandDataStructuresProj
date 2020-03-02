@@ -26,6 +26,7 @@ protected:
 public:
 
 	static SuspectPool* GetInstance();
+	Suspects* GetCaseIterator();
 
 	SuspectPool();
 	~SuspectPool();

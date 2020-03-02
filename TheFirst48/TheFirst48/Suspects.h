@@ -22,7 +22,7 @@ protected:
 	Emotions previousEmotion = NEUTRAL;
 	Emotions* emotions;
 
-	SuspectList suspect = DEFAULT;
+	SuspectList suspect = DEFAULTSUSPECT;
 
 public:
 

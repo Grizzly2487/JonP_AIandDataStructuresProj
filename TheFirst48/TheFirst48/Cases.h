@@ -14,7 +14,7 @@ private:
 	
 protected:
 
-	Case currentCase = DEFAULT;
+	Case currentCase = DEFAULTCASE;
 
 	bool isSolved = false;
 

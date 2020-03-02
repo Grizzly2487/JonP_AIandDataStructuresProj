@@ -36,6 +36,7 @@ void CaseOne::NotKillerDialogue()
 
 CaseOne::CaseOne()
 {
+	cout << "hello world\n";
 }
 
 CaseOne::~CaseOne()
