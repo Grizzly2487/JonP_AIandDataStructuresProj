@@ -5,38 +5,51 @@
 
 Game::Game()
 {
+	CasePool* casePool = CasePool::GetInstance();
+	SuspectPool* suspectPool = SuspectPool::GetInstance();
+
 	while (isPlaying)
 	{
 		cout << "\n\n\n";
 		cout << "\t\t\t _________\n";
 		cout << "\t\t\t|Main Menu|\n";
 		cout << "\n\n";
-		cout << "\t\t\tPress enter to choose case.\n";
-		cout << "\t\t\tArrow keys to change cases.\n";
-		cout << "\t\t\tQuit = Press 0\n\n";
-		cout << "\t\t\tChoice: ";
-
 		casePool->GetCaseIterator()->CaseDialogue();
+		cout << "\t\t\tGo Back = Press 1\n";
+		cout << "\t\t\tGo Forward = Press 2\n";
+		cout << "\t\t\tEnter = Press 3\n";
+		cout << "\t\t\tQuit = Press 4\n\n";
+		cout << "\t\t\tChoice: ";
 
 		cin >> choice;
 
 		switch (choice)
 		{
-			case KEY_LEFT:
+			case 1:
 			{
+				system("CLS");
 				//go to previous case until beginning of list is hit.
+				
 				break;
 			}
-			case KEY_RIGHT:
+			case 2:
 			{
+				system("CLS");
 				//go to next case until the end of the list is hit.
 				break;
 			}
-			//case KEY_ENTER:
-			//{
-			//	//choose selected case.
-			//	break;
-			//}
+			case 3:
+			{
+				system("CLS");
+				//choose selected case.
+				break;
+			}
+			case 4:
+			{
+				system("CLS");
+				isPlaying = false;
+				break;
+			}
 			default:
 			{
 				cout << "That is not a legal input.\n";
@@ -55,7 +68,7 @@ void Game::QuestionSuspect()
 	{
 		while (isChoosingQ)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to question?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -110,7 +123,7 @@ void Game::QuestionSuspect()
 	{
 		while (isChoosingA)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to question?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -165,7 +178,7 @@ void Game::QuestionSuspect()
 	{
 		while (isChoosingS)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to question?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -309,7 +322,7 @@ void Game::Accuse()
 	{
 		while (isChoosingA)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to Accuse?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -364,7 +377,7 @@ void Game::Accuse()
 	{
 		while (isChoosingA)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to Accuse?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -419,7 +432,7 @@ void Game::Accuse()
 	{
 		while (isChoosingA)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to Accuse?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -477,7 +490,7 @@ void Game::SolveCase()
 	{
 		while (isChoosingS)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to accuse of being the killer?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -532,7 +545,7 @@ void Game::SolveCase()
 	{
 		while (isChoosingS)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to accuse of being the killer?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -587,7 +600,7 @@ void Game::SolveCase()
 	{
 		while (isChoosingS)
 		{
-			cout << "Which Suspect would you like to question?\n";
+			cout << "Which suspect would you like to accuse of being the killer?\n";
 			cout << "Suspect 1 = 1\n";
 			cout << "Suspect 2 = 2\n";
 			cout << "Suspect 3 = 3\n";
@@ -639,6 +652,7 @@ void Game::SolveCase()
 		isChoosingS = true;
 	}
 }
+
 
 bool Game::setIsPlaying(bool changeIsPlaying)
 {

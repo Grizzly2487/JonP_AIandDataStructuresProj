@@ -2,6 +2,7 @@
 
 void CaseThree::CaseDialogue()
 {
+	cout << "Insert Case 1 Dialogue Here\n";
 }
 
 void CaseThree::SolvedDialogue()
@@ -34,7 +35,6 @@ void CaseThree::NotKillerDialogue()
 
 CaseThree::CaseThree()
 {
-	cout << "Hello World 3\n";
 }
 
 CaseThree::~CaseThree()

@@ -8,6 +8,7 @@ private:
 	public:
 		T mData;
 		Node* mNext;
+		Node* mPrevious;
 	};
 public:
 	class Iterator {
@@ -23,7 +24,21 @@ public:
 		}
 		void operator++() { //pre-increment
 			mNode = mNode->mNext;
+			if (mNode == nullptr)
+			{
+				mNode = mRoot;
+			}
+		}
+		void operator--(int) { // post-decrement
+			mNode = mNode->mPrevious;
 			_ASSERT_EXPR(mNode != nullptr, L"cannot seek iterator after end");
+		}
+		void operator--() { //pre-decrement
+			mNode = mNode->mPrevious;
+			if (mNode == nullptr)
+			{
+				mNode = mTail;
+			}
 		}
 
 		//BigO Notation: O(N)

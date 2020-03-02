@@ -15,6 +15,7 @@ Cases* CasePool::GetCaseIterator()
 	return *iterator;
 }
 
+
 CasePool::CasePool()
 {
 	cases.push_back(new CaseOne());
