@@ -20,25 +20,15 @@ public:
 		}
 		void operator++(int) { // post-increment
 			mNode = mNode->mNext;
-			_ASSERT_EXPR(mNode != nullptr, L"cannot seek iterator after end");
 		}
 		void operator++() { //pre-increment
 			mNode = mNode->mNext;
-			if (mNode == nullptr)
-			{
-				mNode = mRoot;
-			}
 		}
 		void operator--(int) { // post-decrement
 			mNode = mNode->mPrevious;
-			_ASSERT_EXPR(mNode != nullptr, L"cannot seek iterator after end");
 		}
 		void operator--() { //pre-decrement
 			mNode = mNode->mPrevious;
-			if (mNode == nullptr)
-			{
-				mNode = mTail;
-			}
 		}
 
 		//BigO Notation: O(N)
@@ -65,10 +55,17 @@ private:
 	unsigned mSize;
 
 public:
+	Node* GetRoot(){
+		return mRoot;
+	}
+	Node* GetTail() {
+		return mTail;
+	}
 	void push_back(T data) {
 		Node* node = new Node();
 		node->mData = data;
 		node->mNext = nullptr;
+		node->mPrevious = mTail;
 
 		if (mTail) {
 			mTail->mNext = node;

@@ -20,8 +20,6 @@ private:
 	CasePool* casePool;
 	SuspectPool* suspectPool;
 
-	Cases* currentCase;
-
 	int suspect;
 	int choice;
 	bool isPlaying = true;

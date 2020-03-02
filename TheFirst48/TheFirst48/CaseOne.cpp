@@ -37,6 +37,7 @@ void CaseOne::NotKillerDialogue()
 
 CaseOne::CaseOne()
 {
+	currentCase = CASEONE;
 }
 
 CaseOne::~CaseOne()

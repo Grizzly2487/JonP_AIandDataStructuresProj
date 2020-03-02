@@ -6,7 +6,7 @@
 Game::Game()
 {
 	CasePool* casePool = CasePool::GetInstance();
-	SuspectPool* suspectPool = SuspectPool::GetInstance();
+	//SuspectPool* suspectPool = SuspectPool::GetInstance();
 
 	while (isPlaying)
 	{
@@ -29,19 +29,21 @@ Game::Game()
 			{
 				system("CLS");
 				//go to previous case until beginning of list is hit.
-				
+				casePool->DecrementIterator();
 				break;
 			}
 			case 2:
 			{
 				system("CLS");
 				//go to next case until the end of the list is hit.
+				casePool->IncrementIterator();
 				break;
 			}
 			case 3:
 			{
 				system("CLS");
 				//choose selected case.
+
 				break;
 			}
 			case 4:

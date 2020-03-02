@@ -21,7 +21,8 @@ public:
 
 	static CasePool* GetInstance();
 	Cases* GetCaseIterator();
-
+	void IncrementIterator();
+	void DecrementIterator();
 
 	CasePool();
 	~CasePool();

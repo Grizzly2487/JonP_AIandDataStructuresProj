@@ -15,6 +15,22 @@ Cases* CasePool::GetCaseIterator()
 	return *iterator;
 }
 
+void CasePool::IncrementIterator()
+{
+	iterator++;
+	if (iterator == cases.end())
+	{
+		iterator = cases.GetRoot();
+	}
+}
+void CasePool::DecrementIterator()
+{
+	iterator--;
+	if (iterator == cases.end())
+	{
+		iterator = cases.GetTail();
+	}
+}
 
 CasePool::CasePool()
 {
