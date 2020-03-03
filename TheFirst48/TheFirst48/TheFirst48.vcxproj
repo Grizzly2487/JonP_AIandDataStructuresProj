@@ -145,7 +145,6 @@
     <ClCompile Include="CaseTwo.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StartScreen.cpp" />
     <ClCompile Include="SuspectFive.cpp" />
     <ClCompile Include="SuspectFour.cpp" />
     <ClCompile Include="SuspectOne.cpp" />
@@ -161,10 +160,9 @@
     <ClInclude Include="Cases.h" />
     <ClInclude Include="CaseThree.h" />
     <ClInclude Include="CaseTwo.h" />
-    <ClInclude Include="StateMachines.h" />
+    <ClInclude Include="Emotions.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="LinkList.h" />
-    <ClInclude Include="StartScreen.h" />
     <ClInclude Include="SuspectFive.h" />
     <ClInclude Include="SuspectFour.h" />
     <ClInclude Include="SuspectOne.h" />

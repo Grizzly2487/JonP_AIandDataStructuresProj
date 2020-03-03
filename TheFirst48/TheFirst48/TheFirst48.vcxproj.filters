@@ -51,9 +51,6 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="StartScreen.cpp">
-      <Filter>Source Files\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files\Main</Filter>
     </ClCompile>
@@ -104,9 +101,6 @@
     <ClInclude Include="Game.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="StartScreen.h">
-      <Filter>Header Files\Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="CasePool.h">
       <Filter>Header Files\Pools</Filter>
     </ClInclude>
@@ -115,9 +109,6 @@
     </ClInclude>
     <ClInclude Include="Suspects.h">
       <Filter>Header Files\Suspects</Filter>
-    </ClInclude>
-    <ClInclude Include="StateMachines.h">
-      <Filter>Header Files\FSMs</Filter>
     </ClInclude>
     <ClInclude Include="CaseOne.h">
       <Filter>Header Files\Cases</Filter>
@@ -145,6 +136,9 @@
     </ClInclude>
     <ClInclude Include="SuspectTwo.h">
       <Filter>Header Files\Suspects</Filter>
+    </ClInclude>
+    <ClInclude Include="Emotions.h">
+      <Filter>Header Files\FSMs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

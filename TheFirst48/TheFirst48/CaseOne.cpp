@@ -91,7 +91,7 @@ void CaseOne::QuestionSuspect()
 {
 	while (isChoosingQ)
 	{
-		suspectPool->GetSuspectIterator()->CaseDialogue();
+		suspectPool->GetSuspectIterator()->
 		cout << "Which suspect would you like to question?\n";
 		cout << "Cycle Left = Press 1\n";
 		cout << "Cycle Right = Press 2\n";

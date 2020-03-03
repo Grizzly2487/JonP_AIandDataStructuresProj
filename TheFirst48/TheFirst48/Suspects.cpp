@@ -1,13 +1,43 @@
 #include "Suspects.h"
 
-void Suspects::GetEmotion()
+Emotions Suspects::GetEmotion()
 {
-	cout << currentEmotion << endl;
+	return currentEmotion;
 }
 
-void Suspects::GetPreviousEmotion()
+Emotions Suspects::GetPreviousEmotion()
 {
-	cout << previousEmotion << endl;
+	return previousEmotion;
+}
+
+string Suspects::GetName()
+{
+	return string();
+}
+
+string Suspects::SetName(string newName)
+{
+	return string();
+}
+
+bool Suspects::GetIsLiar()
+{
+	return false;
+}
+
+bool Suspects::SetIsLiar(bool changeState)
+{
+	return false;
+}
+
+bool Suspects::GetIsKiller()
+{
+	return false;
+}
+
+bool Suspects::SetIsKiller(bool newKiller)
+{
+	return false;
 }
 
 Emotions Suspects::SetEmotion(Emotions changeEmotion)
