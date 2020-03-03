@@ -10,6 +10,39 @@ protected:
 
 public:
 
+	//functions for suspects
+	virtual Emotions GetEmotion()override;
+	virtual Emotions SetEmotion(Emotions changeEmotion)override;
+	virtual Emotions GetPreviousEmotion()override;
+
+	virtual string GetName()override;
+	virtual string SetName(string newName)override;
+
+	virtual bool GetIsLiar()override;
+	virtual bool SetIsLiar(bool changeState)override;
+
+	virtual bool GetIsKiller()override;
+	virtual bool SetIsKiller(bool newKiller)override;
+
+	//Suspect Main Dialogue
+	virtual void NeutralDialogue()override;
+
+	//Suspect isLiar Dialogue
+	virtual void LiarDialogue()override;
+
+	//Suspect Accused and !isLiar Dialogue
+	virtual void AccusedDialogue()override;
+
+	//Suspect Accused and isLiar Dialogue
+	virtual void AccusedLiarDialogue()override;
+
+	//Suspect Accused and isKiller Dialogue
+	virtual void KillerDialogue()override;
+
+	//Suspect Accused and !isKiller Dialogue
+	virtual void NotKillerDialogue()override;
+
+
 	//Emotion Dialogue
 	virtual void EmotionDialogue()override;
 

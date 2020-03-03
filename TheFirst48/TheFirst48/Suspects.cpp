@@ -12,32 +12,35 @@ Emotions Suspects::GetPreviousEmotion()
 
 string Suspects::GetName()
 {
-	return string();
+	return name;
 }
 
 string Suspects::SetName(string newName)
 {
-	return string();
+	name = newName;
+	return name;
 }
 
 bool Suspects::GetIsLiar()
 {
-	return false;
+	return isLiar;
 }
 
 bool Suspects::SetIsLiar(bool changeState)
 {
-	return false;
+	isLiar = changeState;
+	return isLiar;
 }
 
 bool Suspects::GetIsKiller()
 {
-	return false;
+	return isKiller;
 }
 
 bool Suspects::SetIsKiller(bool newKiller)
 {
-	return false;
+	isKiller = newKiller;
+	return isKiller;
 }
 
 Emotions Suspects::SetEmotion(Emotions changeEmotion)
@@ -74,9 +77,25 @@ void Suspects::EmotionDialogue()
 }
 
 Suspects::Suspects()
-{
-}
+{}
 
 Suspects::~Suspects()
-{
-}
+{}
+
+void Suspects::NeutralDialogue()
+{}
+
+void Suspects::LiarDialogue()
+{}
+
+void Suspects::AccusedDialogue()
+{}
+
+void Suspects::AccusedLiarDialogue()
+{}
+
+void Suspects::KillerDialogue()
+{}
+
+void Suspects::NotKillerDialogue()
+{}

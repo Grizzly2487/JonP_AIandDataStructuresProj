@@ -15,6 +15,22 @@ Suspects* SuspectPool::GetSuspectIterator()
 	return *iterator;
 }
 
+void SuspectPool::IncrementIterator()
+{
+	iterator++;
+	if (iterator == suspects.end())
+	{
+		iterator = suspects.GetRoot();
+	}
+}
+void SuspectPool::DecrementIterator()
+{
+	iterator--;
+	if (iterator == suspects.end())
+	{
+		iterator = suspects.GetTail();
+	}
+}
 SuspectPool::SuspectPool()
 {
 	suspects.push_back(new SuspectOne());

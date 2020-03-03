@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "StateMachines.h"
+#include "Emotions.h"
 
 
 using namespace std;
@@ -18,25 +18,43 @@ protected:
 	bool isKiller = false;
 
 	Emotions defaultEmotion = NEUTRAL;
-	Emotions currentEmotion;
+	Emotions currentEmotion = defaultEmotion;
 	Emotions previousEmotion = NEUTRAL;
 	Emotions* emotions;
 
 public:
 
-	Emotions GetEmotion();
-	Emotions SetEmotion(Emotions changeEmotion);
-	Emotions GetPreviousEmotion();
+	//functions for suspects
+	virtual Emotions GetEmotion();
+	virtual Emotions SetEmotion(Emotions changeEmotion);
+	virtual Emotions GetPreviousEmotion();
+	
+	virtual string GetName();
+	virtual string SetName(string newName);
+	
+	virtual bool GetIsLiar();
+	virtual bool SetIsLiar(bool changeState);
+	
+	virtual bool GetIsKiller();
+	virtual bool SetIsKiller(bool newKiller);
 
-	string GetName();
-	string SetName(string newName);
+	//Suspect Main Dialogue
+	virtual void NeutralDialogue();
 
-	bool GetIsLiar();
-	bool SetIsLiar(bool changeState);
+	//Suspect isLiar Dialogue
+	virtual void LiarDialogue();
 
-	bool GetIsKiller();
-	bool SetIsKiller(bool newKiller);
+	//Suspect Accused and !isLiar Dialogue
+	virtual void AccusedDialogue();
 
+	//Suspect Accused and isLiar Dialogue
+	virtual void AccusedLiarDialogue();
+
+	//Suspect Accused and isKiller Dialogue
+	virtual void KillerDialogue();
+
+	//Suspect Accused and !isKiller Dialogue
+	virtual void NotKillerDialogue();
 
 
 	//Emotion Dialogue
