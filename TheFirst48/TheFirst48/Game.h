@@ -18,26 +18,17 @@ class Game
 private:
 	
 	CasePool* casePool;
-	SuspectPool* suspectPool;
 
-	int suspect;
 	int choice;
+
 	bool isPlaying = true;
-	bool isChoosingQ = true;
-	bool isChoosingA = true;
-	bool isChoosingS = true;
+
 	static Game* instance;
 
 protected:
 
 
 public:
-
-	//Detective Functions
-	void QuestionSuspect();
-	void CheckEmotion();
-	void Accuse();
-	void SolveCase();
 
 	inline bool getIsPlaying()const { return this->isPlaying; }
 	bool setIsPlaying(bool changeIsPlaying);

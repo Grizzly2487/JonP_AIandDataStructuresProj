@@ -7,7 +7,7 @@ class CaseOne : public Cases
 {
 private:
 
-
+	
 protected:
 
 
@@ -34,6 +34,16 @@ public:
 
 	//Suspect Accused and !isKiller Dialogue
 	virtual void NotKillerDialogue()override;
+
+	//Start Case One
+	virtual void StartCase()override;
+
+	//Detective Functions
+	virtual void QuestionSuspect() override;
+	virtual void CheckEmotion()override;
+	virtual void Accuse()override;
+	virtual void SolveCase()override;
+
 	CaseOne();
 	~CaseOne();
 };

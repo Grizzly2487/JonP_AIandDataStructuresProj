@@ -10,7 +10,7 @@ SuspectPool* SuspectPool::GetInstance()
 	return instance;
 }
 
-Suspects* SuspectPool::GetCaseIterator()
+Suspects* SuspectPool::GetSuspectIterator()
 {
 	return *iterator;
 }

@@ -34,9 +34,24 @@ void CaseThree::NotKillerDialogue()
 {
 }
 
+void CaseThree::QuestionSuspect()
+{
+}
+
+void CaseThree::CheckEmotion()
+{
+}
+
+void CaseThree::Accuse()
+{
+}
+
+void CaseThree::SolveCase()
+{
+}
+
 CaseThree::CaseThree()
 {
-	currentCase = CASETHREE;
 }
 
 CaseThree::~CaseThree()

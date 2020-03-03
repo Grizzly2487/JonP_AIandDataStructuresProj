@@ -44,7 +44,6 @@ Game::Game()
 				system("CLS");
 				//choose selected case.
 
-				break;
 			}
 			case 4:
 			{
@@ -68,58 +67,7 @@ void Game::QuestionSuspect()
 {
 	if (CASEONE)
 	{
-		while (isChoosingQ)
-		{
-			cout << "Which suspect would you like to question?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
 
-			switch (suspect)
-			{
-				case 1:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				case 2:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				case 3:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				case 4:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				case 5:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				case 6:
-				{
-					isChoosingQ = false;
-					break;
-				}
-				default:
-				{
-					cout << "Not a valid input.\n";
-					break;
-				}
-			}
-		}
-		isChoosingQ = true;
 	}
 	else if (CASETWO)
 	{

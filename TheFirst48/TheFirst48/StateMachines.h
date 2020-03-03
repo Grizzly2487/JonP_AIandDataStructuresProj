@@ -9,13 +9,7 @@ enum Emotions
 	SAD,
 	SCARED
 }; 
-enum Case
-{
-	DEFAULTCASE,
-	CASEONE,
-	CASETWO,
-	CASETHREE
-};
+
 enum SuspectList
 {
 	DEFAULTSUSPECT,

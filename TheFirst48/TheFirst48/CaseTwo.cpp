@@ -35,9 +35,25 @@ void CaseTwo::NotKillerDialogue()
 {
 }
 
+void CaseTwo::QuestionSuspect()
+{
+}
+
+void CaseTwo::CheckEmotion()
+{
+}
+
+void CaseTwo::Accuse()
+{
+}
+
+void CaseTwo::SolveCase()
+{
+}
+
 CaseTwo::CaseTwo()
 {
-	currentCase = CASETWO;
+
 }
 
 CaseTwo::~CaseTwo()

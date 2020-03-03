@@ -14,8 +14,15 @@ private:
 	
 protected:
 
-	Case currentCase = DEFAULTCASE;
+	SuspectPool* suspectPool;
 
+	int option;
+	int suspect;
+
+	bool isChoosingQ = true;
+	bool isChoosingA = true;
+	bool isChoosingS = true;
+	bool isOnCase = false;
 	bool isSolved = false;
 
 public:
@@ -42,6 +49,14 @@ public:
 	//Suspect Accused and !isKiller Dialogue
 	virtual void NotKillerDialogue();
 
+	//Start Current Case
+	virtual void StartCase();
+
+	//Detective Functions
+	virtual void QuestionSuspect();
+	virtual void CheckEmotion();
+	virtual void Accuse();
+	virtual void SolveCase();
 	Cases();
 	~Cases();
 

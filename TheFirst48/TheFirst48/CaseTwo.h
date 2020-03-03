@@ -36,6 +36,12 @@ public:
 	//Suspect Accused and !isKiller Dialogue
 	virtual void NotKillerDialogue()override;
 
+	//Detective Functions
+	virtual void QuestionSuspect() override;
+	virtual void CheckEmotion()override;
+	virtual void Accuse()override;
+	virtual void SolveCase()override;
+
 	CaseTwo();
 	~CaseTwo();
 };
