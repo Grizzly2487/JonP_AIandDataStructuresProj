@@ -24,41 +24,44 @@ protected:
 
 public:
 
-	//functions for suspects
-	virtual Emotions GetEmotion();
-	virtual Emotions SetEmotion(Emotions changeEmotion);
-	virtual Emotions GetPreviousEmotion();
+	//Functions for suspects
+	virtual Emotions GetEmotion() = 0;
+	virtual Emotions SetEmotion(Emotions changeEmotion) = 0;
+	virtual Emotions GetPreviousEmotion() = 0;
 	
-	virtual string GetName();
-	virtual string SetName(string newName);
+	virtual void GetName() = 0;
+	virtual string SetName(string newName) = 0;
 	
-	virtual bool GetIsLiar();
-	virtual bool SetIsLiar(bool changeState);
+	virtual bool GetIsLiar() = 0;
+	virtual bool SetIsLiar(bool changeState) = 0;
 	
-	virtual bool GetIsKiller();
-	virtual bool SetIsKiller(bool newKiller);
+	virtual bool GetIsKiller() = 0;
+	virtual bool SetIsKiller(bool newKiller) = 0;
+
+	//AI Brain
+	virtual void SuspectDialogue() = 0;
 
 	//Suspect Main Dialogue
-	virtual void NeutralDialogue();
+	virtual void NeutralDialogue() = 0;
 
 	//Suspect isLiar Dialogue
-	virtual void LiarDialogue();
+	virtual void LiarDialogue() = 0;
 
 	//Suspect Accused and !isLiar Dialogue
-	virtual void AccusedDialogue();
+	virtual void AccusedDialogue() = 0;
 
 	//Suspect Accused and isLiar Dialogue
-	virtual void AccusedLiarDialogue();
+	virtual void AccusedLiarDialogue() = 0;
 
 	//Suspect Accused and isKiller Dialogue
-	virtual void KillerDialogue();
+	virtual void KillerDialogue() = 0;
 
 	//Suspect Accused and !isKiller Dialogue
-	virtual void NotKillerDialogue();
+	virtual void NotKillerDialogue() = 0;
 
 
 	//Emotion Dialogue
-	virtual void EmotionDialogue();
+	virtual void EmotionDialogue() = 0;
 
 	Suspects();
 	~Suspects();

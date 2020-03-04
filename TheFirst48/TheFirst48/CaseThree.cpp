@@ -6,6 +6,10 @@ void CaseThree::CaseDialogue()
 	cout << "\t\t\t|Insert Case 3 Dialogue Here|\n\n\n"; //have the 3 \n on the last line of dialogue to create the space between the text and choice menu
 }
 
+void CaseThree::SolvedDialogue()
+{
+}
+
 
 void CaseThree::StartCase()
 {

@@ -15,7 +15,7 @@ public:
 	virtual Emotions SetEmotion(Emotions changeEmotion)override;
 	virtual Emotions GetPreviousEmotion()override;
 
-	virtual string GetName()override;
+	virtual void GetName()override;
 	virtual string SetName(string newName)override;
 
 	virtual bool GetIsLiar()override;
@@ -23,6 +23,9 @@ public:
 
 	virtual bool GetIsKiller()override;
 	virtual bool SetIsKiller(bool newKiller)override;
+
+	//AI Brain Dialogue
+	virtual void SuspectDialogue()override;
 
 	//Suspect Main Dialogue
 	virtual void NeutralDialogue()override;

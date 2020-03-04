@@ -13,99 +13,52 @@ SuspectTwo::~SuspectTwo()
 {
 }
 
-Emotions Suspects::GetEmotion()
+Emotions SuspectTwo::GetEmotion()
 {
 	return currentEmotion;
 }
 
-Emotions Suspects::GetPreviousEmotion()
-{
-	return previousEmotion;
-}
-
-string Suspects::GetName()
-{
-	return name;
-}
-
-string Suspects::SetName(string newName)
-{
-	name = newName;
-	return name;
-}
-
-bool Suspects::GetIsLiar()
-{
-	return isLiar;
-}
-
-bool Suspects::SetIsLiar(bool changeState)
-{
-	isLiar = changeState;
-	return isLiar;
-}
-
-bool Suspects::GetIsKiller()
-{
-	return isKiller;
-}
-
-bool Suspects::SetIsKiller(bool newKiller)
-{
-	isKiller = newKiller;
-	return isKiller;
-}
-
-Emotions Suspects::SetEmotion(Emotions changeEmotion)
+Emotions SuspectTwo::SetEmotion(Emotions changeEmotion)
 {
 	previousEmotion = currentEmotion;
 	currentEmotion = changeEmotion;
 	return currentEmotion;
 }
 
-Emotions SuspectTwo::GetEmotion()
-{
-	return Emotions();
-}
-
-Emotions SuspectTwo::SetEmotion(Emotions changeEmotion)
-{
-	return Emotions();
-}
-
 Emotions SuspectTwo::GetPreviousEmotion()
 {
-	return Emotions();
+	return previousEmotion;
 }
-
-string SuspectTwo::GetName()
+void SuspectTwo::GetName()
 {
-	return string();
+	cout << "\t\t\t" << name << "\n" << endl;
 }
-
 string SuspectTwo::SetName(string newName)
 {
-	return string();
+	name = newName;
+	return name;
 }
-
 bool SuspectTwo::GetIsLiar()
 {
-	return false;
+	return isLiar;
 }
-
 bool SuspectTwo::SetIsLiar(bool changeState)
 {
-	return false;
+	isLiar = changeState;
+	return isLiar;
 }
-
 bool SuspectTwo::GetIsKiller()
 {
-	return false;
+	return isKiller;
 }
-
 bool SuspectTwo::SetIsKiller(bool newKiller)
 {
-	return false;
+	isKiller = newKiller;
+	return isKiller;
+}
+
+void SuspectTwo::SuspectDialogue()
+{
 }
 
 void SuspectTwo::NeutralDialogue()

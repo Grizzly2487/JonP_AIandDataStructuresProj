@@ -5,6 +5,9 @@ using namespace std;
 void Cases::CaseDialogue()
 {}
 
+void Cases::SolvedDialogue()
+{}
+
 void Cases::StartCase()
 {}
 

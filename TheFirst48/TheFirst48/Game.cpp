@@ -44,7 +44,7 @@ Game::Game()
 			{
 				system("CLS");
 				//choose selected case.
-
+				casePool->GetCaseIterator()->StartCase();
 			}
 			case 4:
 			{
@@ -64,344 +64,6 @@ Game::Game()
 }
 
 
-void Game::Accuse()
-{
-	if (CASEONE)
-	{
-		while (isChoosingA)
-		{
-			cout << "Which suspect would you like to Accuse?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-			case 1:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 2:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 3:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 4:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 5:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 6:
-			{
-				isChoosingA = false;
-				break;
-			}
-			default:
-			{
-				cout << "Not a valid input.\n";
-				break;
-			}
-			}
-		}
-		isChoosingA = true;
-	}
-	else if (CASETWO)
-	{
-		while (isChoosingA)
-		{
-			cout << "Which suspect would you like to Accuse?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-			case 1:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 2:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 3:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 4:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 5:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 6:
-			{
-				isChoosingA = false;
-				break;
-			}
-			default:
-			{
-				cout << "Not a valid input.\n";
-				break;
-			}
-			}
-		}
-		isChoosingA = true;
-	}
-	else if (CASETHREE)
-	{
-		while (isChoosingA)
-		{
-			cout << "Which suspect would you like to Accuse?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-			case 1:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 2:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 3:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 4:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 5:
-			{
-				isChoosingA = false;
-				break;
-			}
-			case 6:
-			{
-				isChoosingA = false;
-				break;
-			}
-			default:
-			{
-				cout << "Not a valid input.\n";
-				break;
-			}
-			}
-		}
-		isChoosingA = true;
-	}
-}
-void Game::SolveCase()
-{
-	if (CASEONE)
-	{
-		while (isChoosingS)
-		{
-			cout << "Which suspect would you like to accuse of being the killer?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-				case 1:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 2:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 3:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 4:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 5:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 6:
-				{
-					isChoosingS = false;
-					break;
-				}
-				default:
-				{
-					cout << "Not a valid input.\n";
-					break;
-				}
-			}
-		}
-		isChoosingS = true;
-	}
-	else if (CASETWO)
-	{
-		while (isChoosingS)
-		{
-			cout << "Which suspect would you like to accuse of being the killer?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-				case 1:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 2:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 3:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 4:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 5:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 6:
-				{
-					isChoosingS = false;
-					break;
-				}
-				default:
-				{
-					cout << "Not a valid input.\n";
-					break;
-				}
-			}
-		}
-		isChoosingS = true;
-	}
-	else if (CASETHREE)
-	{
-		while (isChoosingS)
-		{
-			cout << "Which suspect would you like to accuse of being the killer?\n";
-			cout << "Suspect 1 = 1\n";
-			cout << "Suspect 2 = 2\n";
-			cout << "Suspect 3 = 3\n";
-			cout << "Suspect 4 = 4\n";
-			cout << "Suspect 5 = 5\n";
-			cout << "Suspect 6 = 6\n";
-			cout << "\n";
-			cin >> suspect;
-
-			switch (suspect)
-			{
-				case 1:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 2:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 3:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 4:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 5:
-				{
-					isChoosingS = false;
-					break;
-				}
-				case 6:
-				{
-					isChoosingS = false;
-					break;
-				}
-				default:
-				{
-					cout << "Not a valid input.\n";
-					break;
-				}
-			}
-		}
-		isChoosingS = true;
-	}
-}
-
-
 bool Game::setIsPlaying(bool changeIsPlaying)
 {
 	isPlaying = changeIsPlaying;
@@ -412,22 +74,20 @@ void Game::Intro()
 	while (isStartScreen)
 	{
 		cout << "\n\n";
-		cout << "\tWhen a crime has been commited, the timer has begun.\n";
-		cout << "\n\n";
-		cout << "\tWhile most cases are solved within the first 48, some go on days, weeks, months, or even years after..\n";
-		cout << "\n\n";
-		cout << "\tAs a detective, you have only 48 hours, before the trail goes cold..\n";
-		cout << "\n\n\n";
-		cout << "\t\t\t\t ______________\n";
-		cout << "\t\t\t\t| The First 48 |\n\n\n\n";
-		cout << "\t\t\t\tPRESS 0 TO CONTINUE\n\n";
+		cout << "\t\tWhen a crime has been commited, the timer has begun.\n\n\n";
+		cout << "\t\tWhile most cases are solved within the first 48, some go on days, weeks, months, or even years after..\n\n\n";
+		cout << "\t\tAs a detective, you have only 48 hours, before the trail goes cold..\n\n\n\n";
+		cout << "\t\t\t ______________\n";
+		cout << "\t\t\t| The First 48 |\n\n\n\n";
+		cout << "\t\t\tPRESS 0 TO CONTINUE\n\n";
+		cout << "\t\t\tContinue: ";
 		cin >> changeScreen;
 
 		switch (changeScreen)
 		{
 		case 0:
-			isStartScreen = false;
 			system("CLS");
+			isStartScreen = false;
 			break;
 		default:
 			system("CLS");
@@ -435,7 +95,6 @@ void Game::Intro()
 			break;
 		}
 	}
-	system("CLS");
 }
 Game::~Game()
 {}
