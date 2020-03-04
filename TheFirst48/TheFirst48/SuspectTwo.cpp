@@ -59,28 +59,42 @@ bool SuspectTwo::SetIsKiller(bool newKiller)
 
 void SuspectTwo::SuspectDialogue()
 {
+	if (isLiar)
+	{
+		LiarDialogue();
+	}
+	else if (!isLiar)
+	{
+		NeutralDialogue();
+	}
 }
 
 void SuspectTwo::NeutralDialogue()
 {
+	cout << "\t\t\tNEUTRAL DIALOGUE\n\n";
 }
 
 void SuspectTwo::LiarDialogue()
 {
+	cout << "\t\t\tLIAR DIALOGUE\n\n";
 }
 
 void SuspectTwo::AccusedDialogue()
 {
+	cout << "\t\t\tACCUSED DIALOGUE\n\n";
 }
 
 void SuspectTwo::AccusedLiarDialogue()
 {
+	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
 }
 
 void SuspectTwo::KillerDialogue()
 {
+	cout << "\t\t\tKILLER DIALOGUE\n\n";
 }
 
 void SuspectTwo::NotKillerDialogue()
 {
+	cout << "\t\t\tNOT KILLER DIALOGUE\n\n";
 }

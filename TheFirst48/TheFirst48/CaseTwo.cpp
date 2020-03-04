@@ -10,6 +10,10 @@ void CaseTwo::SolvedDialogue()
 {
 }
 
+void CaseTwo::ChooseCulprits()
+{
+}
+
 
 void CaseTwo::StartCase()
 {

@@ -18,6 +18,9 @@ public:
 	virtual void CaseDialogue()override;
 	virtual void SolvedDialogue()override;
 
+	//Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
+	virtual void ChooseCulprits()override;
+
 	//Start Case Two
 	virtual void StartCase()override;
 

@@ -140,7 +140,6 @@
   <ItemGroup>
     <ClCompile Include="CaseOne.cpp" />
     <ClCompile Include="CasePool.cpp" />
-    <ClCompile Include="Cases.cpp" />
     <ClCompile Include="CaseThree.cpp" />
     <ClCompile Include="CaseTwo.cpp" />
     <ClCompile Include="Game.cpp" />

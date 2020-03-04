@@ -11,6 +11,14 @@ void CaseOne::SolvedDialogue()
 	cout << "\t\t\tThe Case is Solved!\n\n";
 }
 
+void CaseOne::ChooseCulprits()
+{
+	//for (int i = 0; i < SuspectPool::GetInstance().size; i++)
+	//{
+
+	//}
+}
+
 
 void CaseOne::StartCase()
 {

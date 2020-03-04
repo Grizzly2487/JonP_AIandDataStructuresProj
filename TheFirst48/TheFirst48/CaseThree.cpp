@@ -10,6 +10,10 @@ void CaseThree::SolvedDialogue()
 {
 }
 
+void CaseThree::ChooseCulprits()
+{
+}
+
 
 void CaseThree::StartCase()
 {

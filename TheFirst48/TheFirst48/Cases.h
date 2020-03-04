@@ -26,19 +26,22 @@ protected:
 public:
 
 	//Dialogue
-	virtual void CaseDialogue();
-	virtual void SolvedDialogue();
+	virtual void CaseDialogue() = 0;
+	virtual void SolvedDialogue() = 0;
+
+	//Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
+	virtual void ChooseCulprits() = 0;
 
 	//Start Current Case
-	virtual void StartCase();
+	virtual void StartCase() = 0;
 
 	//Detective Functions
-	virtual void QuestionSuspect();
-	virtual void CheckEmotion();
-	virtual void Accuse();
-	virtual void SolveCase();
-	Cases();
-	~Cases();
+	virtual void QuestionSuspect() = 0;
+	virtual void CheckEmotion() = 0;
+	virtual void Accuse() = 0;
+	virtual void SolveCase() = 0;
+	Cases() {};
+	~Cases() {};
 
 
 

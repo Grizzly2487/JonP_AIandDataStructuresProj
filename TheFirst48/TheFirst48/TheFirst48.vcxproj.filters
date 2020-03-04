@@ -57,9 +57,6 @@
     <ClCompile Include="CasePool.cpp">
       <Filter>Source Files\Pools</Filter>
     </ClCompile>
-    <ClCompile Include="Cases.cpp">
-      <Filter>Source Files\Cases</Filter>
-    </ClCompile>
     <ClCompile Include="Suspects.cpp">
       <Filter>Source Files\Suspects</Filter>
     </ClCompile>
