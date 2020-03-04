@@ -9,19 +9,26 @@ void CaseOne::CaseDialogue()
 void CaseOne::SolvedDialogue()
 {
 	cout << "\t\t\tThe Case is Solved!\n\n";
+	isOnCase = false;
+}
+
+void CaseOne::GameOverDialogue()
+{
+	cout << "\t\t\tYou Died and the Killer got away...\n\n";
+	isOnCase = false;
 }
 
 void CaseOne::ChooseCulprits()
 {
-	srand(time(NULL));
-	int randSuspect1 = rand() % 6;
-	int randSuspect2 = rand() % 6;
-	int randSuspect3 = rand() % 6;
+	//srand(time(NULL));
+	//int randSuspect1 = rand() % 6;
+	//int randSuspect2 = rand() % 6;
+	//int randSuspect3 = rand() % 6;
 
-	for (int i = 0, n = SuspectPool::GetInstance()->GetSize(); i < n; i++)
-	{
-		
-	}
+	//for (int i = 0, n = SuspectPool::GetInstance()->GetSize(); i < n; i++)
+	//{
+	//	
+	//}
 }
 
 
@@ -30,7 +37,8 @@ void CaseOne::StartCase()
 	isOnCase = true;
 	while (isOnCase)
 	{
-		cout << "\t\t\t\t\t\t" << hoursLeft << "\n";
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		cout << "\t\t\tWhat option would you like to pursue\n";
 		cout << "\n\n";
@@ -39,9 +47,9 @@ void CaseOne::StartCase()
 		cout << "\t\t\tSolve the case = Press 3\n\n";
 		cout << "\t\t\tQuit to Main Menu = Press 4\n\n";
 		cout << "\t\t\tOption: ";
-		cin >> option;
+		cin >> mOption;
 
-		switch (option)
+		switch (mOption)
 		{
 			case 1:
 			{
@@ -87,7 +95,8 @@ void CaseOne::QuestionSuspect()
 {
 	while (isChoosingQ)
 	{
-		cout << "\t\t\t\t\t\t" << hoursLeft << "\n";
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		SuspectPool::GetInstance()->GetSuspectIterator()->GetName();
 		cout << "\t\t\tWhich suspect would you like to question?\n\n";
@@ -145,14 +154,15 @@ void CaseOne::QuestionSuspect()
 void CaseOne::CheckEmotion()
 {
 	hoursLeft = hoursLeft - 1;
-	SuspectPool::GetInstance()->GetSuspectIterator()->GetEmotion();
+	cout << SuspectPool::GetInstance()->GetSuspectIterator()->GetEmotion() << endl;
 }
 
 void CaseOne::Accuse()
 {
 	while (isChoosingA)
 	{
-		cout << "\t\t\t\t\t\t" << hoursLeft << "\n";
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		SuspectPool::GetInstance()->GetSuspectIterator()->GetName();
 		cout << "\t\t\tWhich suspect would you like to accuse?\n\n";
@@ -210,7 +220,8 @@ void CaseOne::SolveCase()
 {
 	while (isChoosingS)
 	{
-		cout << "\t\t\t\t\t\t" << hoursLeft << "\n";
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		SuspectPool::GetInstance()->GetSuspectIterator()->GetName();
 		cout << "\t\t\tWho is the Killer?\n\n";
@@ -268,13 +279,15 @@ void CaseOne::QuestioningStage()
 {
 	while (isQuestioning)
 	{
-		cout << "\t\t\t\t\t\t" << hoursLeft << "\n";
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		SuspectPool::GetInstance()->GetSuspectIterator()->SuspectDialogue();
 		cout << "\t\t\tWhat would you like to do?\n\n";
 		cout << "\t\t\tAccuse suspect of being a liar = Press 1\n";
 		cout << "\t\t\tBelieve their story = Press 2\n";
-		cout << "\t\t\tContinue With Case = Press 3\n";
+		cout << "\t\t\tCheck emotion of suspect = Press 3\n";
+		cout << "\t\t\tContinue With Case = Press 4\n";
 		cout << "\n";
 		cin >> qOption;
 
@@ -292,6 +305,12 @@ void CaseOne::QuestioningStage()
 				break;
 			}
 			case 3:
+			{
+				system("CLS");
+				CheckEmotion();
+				break;
+			}
+			case 4:
 			{
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
@@ -312,10 +331,65 @@ void CaseOne::QuestioningStage()
 
 void CaseOne::AccusationStage()
 {
+	while (isAccusing)
+	{
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
+		cout << "\n\n\n";
+		if (!SuspectPool::GetInstance()->GetSuspectIterator()->GetIsLiar())
+		{
+			hoursLeft = hoursLeft - 6;
+			system("CLS");
+			SuspectPool::GetInstance()->GetSuspectIterator()->AccusedDialogue();
+			break;
+		}
+		else
+		{
+			system("CLS");
+			SuspectPool::GetInstance()->GetSuspectIterator()->AccusedLiarDialogue();
+			break;
+		}
+		cout << "\t\t\tContinue With Case = Press 1\n";
+		cout << "\n";
+		cin >> aOption;
+
+		switch (aOption)
+		{
+			case 1:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				isAccusing = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
+		}
+	}
+	isAccusing= true;
 }
 
 void CaseOne::SolvingStage()
 {
+		cout << "\n";
+		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
+		cout << "\n\n\n";
+		if (!SuspectPool::GetInstance()->GetSuspectIterator()->GetIsKiller())
+		{
+			GameOverDialogue();
+		}
+		else
+		{
+			system("CLS");
+			SuspectPool::GetInstance()->GetSuspectIterator()->KillerDialogue();
+			cout << "\n\n";
+			SolvedDialogue();
+		}
 }
 
 CaseOne::CaseOne()

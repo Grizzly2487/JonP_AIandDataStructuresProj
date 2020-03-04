@@ -16,14 +16,17 @@ protected:
 
 	int hoursLeft = 48;
 
-	int option;
-	int suspect;
+	int mOption;
 	int qOption;
+	int aOption;
+	int sOption;
+	int suspect;
 
 	bool isChoosingQ = true;
 	bool isChoosingA = true;
 	bool isChoosingS = true;
 	bool isQuestioning = true;
+	bool isAccusing = true;
 	bool isOnCase = false;
 	bool isSolved = false;
 
@@ -32,6 +35,7 @@ public:
 	//Dialogue
 	virtual void CaseDialogue() = 0;
 	virtual void SolvedDialogue() = 0;
+	virtual void GameOverDialogue() = 0;
 
 	//Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
 	virtual void ChooseCulprits() = 0;
