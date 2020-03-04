@@ -15,6 +15,11 @@ Cases* CasePool::GetCaseIterator()
 	return *iterator;
 }
 
+void CasePool::GetSize()
+{
+	cases.GetSize();
+}
+
 void CasePool::IncrementIterator()
 {
 	iterator++;

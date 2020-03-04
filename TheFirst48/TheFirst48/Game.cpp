@@ -45,6 +45,7 @@ Game::Game()
 				system("CLS");
 				//choose selected case.
 				casePool->GetCaseIterator()->StartCase();
+				break;
 			}
 			case 4:
 			{

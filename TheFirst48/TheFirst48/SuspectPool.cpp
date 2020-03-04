@@ -15,6 +15,11 @@ Suspects* SuspectPool::GetSuspectIterator()
 	return *iterator;
 }
 
+unsigned SuspectPool::GetSize()
+{
+	return suspects.GetSize();
+}
+
 void SuspectPool::IncrementIterator()
 {
 	iterator++;

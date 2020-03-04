@@ -83,6 +83,18 @@ void CaseThree::SolveCase()
 {
 }
 
+void CaseThree::QuestioningStage()
+{
+}
+
+void CaseThree::AccusationStage()
+{
+}
+
+void CaseThree::SolvingStage()
+{
+}
+
 CaseThree::CaseThree()
 {
 }

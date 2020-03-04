@@ -61,6 +61,9 @@ public:
 	Node* GetTail() {
 		return mTail;
 	}
+	unsigned GetSize() {
+		return mSize;
+	}
 	void push_back(T data) {
 		Node* node = new Node();
 		node->mData = data;

@@ -28,8 +28,8 @@ public:
 	static SuspectPool* GetInstance();
 	Suspects* GetSuspectIterator();
 
+	unsigned GetSize();
 	void IncrementIterator();
-
 	void DecrementIterator();
 
 	SuspectPool();

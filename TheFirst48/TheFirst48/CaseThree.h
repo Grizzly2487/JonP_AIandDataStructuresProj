@@ -30,6 +30,11 @@ public:
 	virtual void Accuse()override;
 	virtual void SolveCase()override;
 
+	//Stage Functions
+	virtual void QuestioningStage()override;
+	virtual void AccusationStage()override;
+	virtual void SolvingStage()override;
+
 	CaseThree();
 	~CaseThree();
 };
