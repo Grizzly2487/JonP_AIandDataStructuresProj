@@ -9,31 +9,17 @@ void CaseOne::CaseDialogue()
 void CaseOne::SolvedDialogue()
 {
 	cout << "\t\t\tThe Case is Solved!\n\n";
-	isOnCase = false;
 }
 
 void CaseOne::GameOverDialogue()
 {
 	cout << "\t\t\tYou Died and the Killer got away...\n\n";
-	isOnCase = false;
-}
-
-void CaseOne::ChooseCulprits()
-{
-	//srand(time(NULL));
-	//int randSuspect1 = rand() % 6;
-	//int randSuspect2 = rand() % 6;
-	//int randSuspect3 = rand() % 6;
-
-	//for (int i = 0, n = SuspectPool::GetInstance()->GetSize(); i < n; i++)
-	//{
-	//	
-	//}
 }
 
 
 void CaseOne::StartCase()
 {
+	SuspectPool::GetInstance()->ChooseCulprits();
 	isOnCase = true;
 	while (isOnCase)
 	{
@@ -252,7 +238,8 @@ void CaseOne::SolveCase()
 			{
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
-				//Solving stage
+				SolvingStage();
+				isChoosingS = false;
 				break;
 			}
 			case 4:
@@ -381,14 +368,19 @@ void CaseOne::SolvingStage()
 		cout << "\n\n\n";
 		if (!SuspectPool::GetInstance()->GetSuspectIterator()->GetIsKiller())
 		{
+			hoursLeft = 48;
+			system("CLS");
 			GameOverDialogue();
+			isOnCase = false;
 		}
 		else
 		{
+			hoursLeft = 48;
 			system("CLS");
 			SuspectPool::GetInstance()->GetSuspectIterator()->KillerDialogue();
 			cout << "\n\n";
 			SolvedDialogue();
+			isOnCase = false;
 		}
 }
 

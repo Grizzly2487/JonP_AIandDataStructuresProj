@@ -36,7 +36,7 @@ public:
 		void operator+=(unsigned rhs) {
 			for (unsigned i = 0; i < rhs; i++) {
 				mNode = mNode->mNext;
-				_ASSERT_EXPR(mNode != nullptr, L"cannot seek iterator after end");
+				//_ASSERT_EXPR(mNode != nullptr, L"cannot seek iterator after end");
 			}
 		}
 		bool operator==(Node* node) const {
@@ -64,6 +64,16 @@ public:
 	unsigned GetSize() {
 		return mSize;
 	}
+
+	Node* operator+(int nodeNumber) const {
+		Node* node = mRoot;
+		for (int i = 0; i < nodeNumber; i++)
+		{
+			node = node->mNext;
+		}
+		return node;
+	}
+
 	void push_back(T data) {
 		Node* node = new Node();
 		node->mData = data;

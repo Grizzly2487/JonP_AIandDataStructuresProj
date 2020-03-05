@@ -18,13 +18,9 @@ void CaseTwo::GameOverDialogue()
 	isOnCase = false;
 }
 
-void CaseTwo::ChooseCulprits()
-{
-}
-
-
 void CaseTwo::StartCase()
 {
+	SuspectPool::GetInstance()->ChooseCulprits();
 	while (isOnCase)
 	{
 		cout << "\n";

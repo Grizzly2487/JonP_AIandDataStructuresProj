@@ -66,6 +66,8 @@ void SuspectOne::SuspectDialogue()
 	{
 		NeutralDialogue();
 	}
+
+	//if(SuspectOne)
 }
 
 void SuspectOne::NeutralDialogue()

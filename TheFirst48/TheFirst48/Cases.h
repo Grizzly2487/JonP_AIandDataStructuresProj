@@ -3,8 +3,7 @@
 #include "Emotions.h"
 #include <iostream>
 #include <string>
-#include <cstdlib>
-#include <time.h>
+
 
 
 
@@ -36,9 +35,6 @@ public:
 	virtual void CaseDialogue() = 0;
 	virtual void SolvedDialogue() = 0;
 	virtual void GameOverDialogue() = 0;
-
-	//Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
-	virtual void ChooseCulprits() = 0;
 
 	//Start Current Case
 	virtual void StartCase() = 0;
