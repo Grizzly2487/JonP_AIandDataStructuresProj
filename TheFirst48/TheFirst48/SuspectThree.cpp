@@ -72,30 +72,36 @@ void SuspectThree::SuspectDialogue()
 
 void SuspectThree::NeutralDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tNEUTRAL DIALOGUE\n\n";
 }
 
 void SuspectThree::LiarDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tLIAR DIALOGUE\n\n";
 }
 
 void SuspectThree::AccusedDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED DIALOGUE\n\n";
 }
 
 void SuspectThree::AccusedLiarDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
 }
 
 void SuspectThree::KillerDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tKILLER DIALOGUE\n\n";
 }
 
 void SuspectThree::NotKillerDialogue()
 {
+	cout << "\n\n\n";
 	cout << "\t\t\tNOT KILLER DIALOGUE\n\n";
 }

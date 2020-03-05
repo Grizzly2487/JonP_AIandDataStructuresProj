@@ -374,6 +374,11 @@ void CaseThree::SolvingStage()
 	}
 }
 
+int CaseThree::GetHoursLeft()
+{
+	return hoursLeft;
+}
+
 CaseThree::CaseThree()
 {}
 

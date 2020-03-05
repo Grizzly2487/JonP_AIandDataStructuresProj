@@ -50,6 +50,7 @@ public:
 	virtual void AccusationStage() = 0;
 	virtual void SolvingStage() = 0;
 
+	virtual int GetHoursLeft() = 0;
 	Cases() {};
 	~Cases() {};
 

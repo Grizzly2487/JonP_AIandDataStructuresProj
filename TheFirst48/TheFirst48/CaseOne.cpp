@@ -8,12 +8,18 @@ void CaseOne::CaseDialogue()
 
 void CaseOne::SolvedDialogue()
 {
-	cout << "\t\t\tThe Case is Solved!\n\n";
+	cout << "\n";
+	cout << "\t\t\t|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\n\n";
+	cout << "\t\t\t|~|~|The Case is Solved!|~|~|\n\n";
+	cout << "\t\t\t|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\n\n";
 }
 
 void CaseOne::GameOverDialogue()
 {
-	cout << "\t\t\tYou Died and the Killer got away...\n\n";
+	cout << "\n";
+	cout << "\t\t\t|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\n\n";
+	cout << "\t\t\t|~|~|You Died and the Killer got away...|~|~|\n\n";
+	cout << "\t\t\t|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|~|\n\n";
 }
 
 
@@ -29,8 +35,8 @@ void CaseOne::StartCase()
 		cout << "\t\t\tWhat option would you like to pursue\n";
 		cout << "\n\n";
 		cout << "\t\t\tQuestion Suspect = Press 1\n";
-		cout << "\t\t\tAccuse Suspect = Press 2\n";
-		cout << "\t\t\tSolve the case = Press 3\n\n";
+		cout << "\t\t\tAccuse suspect of being a liar = Press 2\n";
+		cout << "\t\t\tSolve the case = Press 3\n";
 		cout << "\t\t\tQuit to Main Menu = Press 4\n\n";
 		cout << "\t\t\tOption: ";
 		cin >> mOption;
@@ -73,9 +79,13 @@ void CaseOne::StartCase()
 				break;
 			}
 		}
-
+		if (GetHoursLeft() <= 0)
+		{
+			GameOverDialogue();
+			isOnCase = false;
+		}
 	}
-}
+}	
 
 void CaseOne::QuestionSuspect()
 {
@@ -90,7 +100,7 @@ void CaseOne::QuestionSuspect()
 		cout << "\t\t\tCycle Right = Press 2\n";
 		cout << "\t\t\tChoose Suspect = Press 3\n";
 		cout << "\t\t\tStop Questioning = Press 4\n\n";
-		cout << "\t\t\tSuspect: ";
+		cout << "\t\t\tOption: ";
 		cin >> suspect;
 
 		switch (suspect)
@@ -156,7 +166,7 @@ void CaseOne::Accuse()
 		cout << "\t\t\tCycle Right = Press 2\n";
 		cout << "\t\t\tChoose Suspect = Press 3\n";
 		cout << "\t\t\tStop Accusation = Press 4\n";
-		cout << "\n";
+		cout << "\t\t\tOption: ";
 		cin >> suspect;
 
 		switch (suspect)
@@ -179,7 +189,7 @@ void CaseOne::Accuse()
 			{
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
-				//Accusation stage
+				AccusationStage();
 				break;
 			}
 			case 4:
@@ -214,8 +224,8 @@ void CaseOne::SolveCase()
 		cout << "\t\t\tCycle Left = Press 1\n";
 		cout << "\t\t\tCycle Right = Press 2\n";
 		cout << "\t\t\tChoose Suspect = Press 3\n";
-		cout << "\t\t\tContinue With Case = Press 4\n";
-		cout << "\n";
+		cout << "\t\t\tContinue With Case = Press 4\n\n";
+		cout << "\t\t\tOption: ";
 		cin >> suspect;
 
 		switch (suspect)
@@ -266,7 +276,6 @@ void CaseOne::QuestioningStage()
 {
 	while (isQuestioning)
 	{
-		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
 		SuspectPool::GetInstance()->GetSuspectIterator()->SuspectDialogue();
@@ -274,8 +283,8 @@ void CaseOne::QuestioningStage()
 		cout << "\t\t\tAccuse suspect of being a liar = Press 1\n";
 		cout << "\t\t\tBelieve their story = Press 2\n";
 		cout << "\t\t\tCheck emotion of suspect = Press 3\n";
-		cout << "\t\t\tContinue With Case = Press 4\n";
-		cout << "\n";
+		cout << "\t\t\tContinue With Case = Press 4\n\n";
+		cout << "\t\t\tOption: ";
 		cin >> qOption;
 
 		switch (qOption)
@@ -328,16 +337,14 @@ void CaseOne::AccusationStage()
 			hoursLeft = hoursLeft - 6;
 			system("CLS");
 			SuspectPool::GetInstance()->GetSuspectIterator()->AccusedDialogue();
-			break;
 		}
 		else
 		{
 			system("CLS");
 			SuspectPool::GetInstance()->GetSuspectIterator()->AccusedLiarDialogue();
-			break;
 		}
-		cout << "\t\t\tContinue With Case = Press 1\n";
 		cout << "\n";
+		cout << "\t\t\tPress 1 to Continue: ";
 		cin >> aOption;
 
 		switch (aOption)
@@ -347,6 +354,9 @@ void CaseOne::AccusationStage()
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
 				isAccusing = false;
+				isQuestioning = false;
+				isChoosingA = false;
+				isChoosingQ = false;
 				break;
 			}
 			default:
@@ -357,6 +367,8 @@ void CaseOne::AccusationStage()
 				break;
 			}
 		}
+		isChoosingA = true;
+		isChoosingQ = true;
 	}
 	isAccusing= true;
 }
@@ -382,6 +394,11 @@ void CaseOne::SolvingStage()
 			SolvedDialogue();
 			isOnCase = false;
 		}
+}
+
+int CaseOne::GetHoursLeft()
+{
+	return hoursLeft;
 }
 
 CaseOne::CaseOne()

@@ -33,6 +33,8 @@ public:
 	virtual void AccusationStage()override;
 	virtual void SolvingStage()override;
 
+	virtual int GetHoursLeft()override;
+
 	CaseTwo();
 	~CaseTwo();
 };

@@ -20,7 +20,7 @@ Game::Game()
 		cout << "\t\t\tGo Forward = Press 2\n";
 		cout << "\t\t\tEnter = Press 3\n";
 		cout << "\t\t\tQuit = Press 4\n\n";
-		cout << "\t\t\tChoice: ";
+		cout << "\t\t\tOption: ";
 
 		cin >> choice;
 
