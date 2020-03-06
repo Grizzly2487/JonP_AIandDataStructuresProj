@@ -2,22 +2,22 @@
 
 void SuspectFive::EmotionDialogue()
 {
-	if (NEUTRAL)
+	if (currentEmotion == NEUTRAL)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tEmotion: Feeling Neutral.\n";
 	}
-	else if (ANXIOUS)
+	else if (currentEmotion == ANXIOUS)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tEmotion: Feeling Anxious.\n";
 	}
-	else if (ANGRY)
+	else if (currentEmotion == ANGRY)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Angry.\n";
 	}
-	else if (SCARED)
+	else if (currentEmotion == SCARED)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Scared.\n";
@@ -27,10 +27,13 @@ void SuspectFive::EmotionDialogue()
 SuspectFive::SuspectFive()
 {
 	name = "Mike";
-	currentEmotion = NEUTRAL;
 	if (GetIsLiar() || GetIsKiller())
 	{
-		currentEmotion = ANXIOUS;
+		SetEmotion(ANXIOUS);
+	}
+	else
+	{
+		SetEmotion(NEUTRAL);
 	}
 }
 
@@ -53,6 +56,13 @@ Emotions SuspectFive::SetEmotion(Emotions changeEmotion)
 void SuspectFive::GetPreviousEmotion()
 {
 	cout << "\t\t\t" << previousEmotion << "\n\n" << endl;
+}
+
+void SuspectFive::ResetSuspect()
+{
+	SetIsLiar(false);
+	SetIsKiller(false);
+	SetEmotion(NEUTRAL);
 }
 
 
@@ -117,14 +127,14 @@ void SuspectFive::AccusedDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED DIALOGUE\n\n";
-	currentEmotion = ANGRY;
+	SetEmotion(ANGRY);
 }
 
 void SuspectFive::AccusedLiarDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
-	currentEmotion = SCARED;
+	SetEmotion(SCARED);
 }
 
 void SuspectFive::KillerDialogue()

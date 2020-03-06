@@ -15,6 +15,8 @@ public:
 	virtual Emotions SetEmotion(Emotions changeEmotion)override;
 	virtual void GetPreviousEmotion()override;
 
+	virtual void ResetSuspect()override;
+
 	virtual void GetName()override;
 	virtual string SetName(string newName)override;
 

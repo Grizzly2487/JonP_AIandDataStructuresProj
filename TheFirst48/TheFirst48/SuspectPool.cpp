@@ -39,6 +39,15 @@ void SuspectPool::ChooseCulprits()
 	liarPool[randomLiar]->SetIsKiller(true);
 }
 
+void SuspectPool::ResetSuspects()
+{
+	for (iterator; iterator != suspects.end(); iterator++)
+	{
+		Suspects* s = *iterator;
+		s->ResetSuspect();
+	}
+}
+
 unsigned SuspectPool::GetSize()
 {
 	return suspects.GetSize();

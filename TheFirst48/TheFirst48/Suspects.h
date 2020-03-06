@@ -19,8 +19,7 @@ protected:
 
 	Emotions defaultEmotion = NEUTRAL;
 	Emotions currentEmotion;
-	Emotions previousEmotion = NEUTRAL;
-	Emotions* emotions;
+	Emotions previousEmotion;
 
 public:
 
@@ -28,6 +27,7 @@ public:
 	virtual void GetEmotion() = 0;
 	virtual Emotions SetEmotion(Emotions changeEmotion) = 0;
 	virtual void GetPreviousEmotion() = 0;
+	virtual void ResetSuspect();
 
 	virtual void GetName() = 0;
 	virtual string SetName(string newName) = 0;

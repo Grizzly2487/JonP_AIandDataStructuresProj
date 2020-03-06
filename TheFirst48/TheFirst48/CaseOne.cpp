@@ -2,8 +2,11 @@
 
 void CaseOne::CaseDialogue()
 {
-	cout << "\t\t\t ___________________________\n";
-	cout << "\t\t\t|Insert Case 1 Dialogue Here|\n\n\n"; //have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t\___________________________________________________________________________________________________________\n";
+	cout << "\t|At a highschool reunion, where everyone dresses like it was the 20's everyone was having a grand soiree.|||\n"; //have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t|everyone was having a grand soiree.The Punch bowl was spiked,and the floor was popping.Dresses and Suits|||\n";
+	cout << "\t|swinging to the beat.When a blood curdling scream stops the music and the party to a dead stop. The body|||\n";
+	cout << "\t|of one of the students is found in the main hall outside the auditorium everyone was just in............|||\n\n\n";
 }
 
 void CaseOne::SolvedDialogue()
@@ -447,7 +450,9 @@ int CaseOne::GetHoursLeft()
 }
 
 CaseOne::CaseOne()
-{}
+{
+	SuspectPool::GetInstance()->ResetSuspects();
+}
 
 CaseOne::~CaseOne()
 {}

@@ -29,11 +29,10 @@ public:
 	static SuspectPool* GetInstance();
 	Suspects* GetSuspectIterator();
 
-
-	//Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
-	void ChooseCulprits();
-
-	unsigned GetSize();
+	//Functions
+	void ChooseCulprits(); //Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.
+	void ResetSuspects();
+	unsigned GetSize(); //Gets the size of the pool.
 	void IncrementIterator();
 	void DecrementIterator();
 

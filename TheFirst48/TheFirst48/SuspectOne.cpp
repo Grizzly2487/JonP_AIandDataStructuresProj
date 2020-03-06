@@ -2,22 +2,22 @@
 
 void SuspectOne::EmotionDialogue()
 {
-	if (NEUTRAL)
+	if (currentEmotion == NEUTRAL)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Neutral.\n";
 	}
-	else if (ANXIOUS)
+	else if (currentEmotion == ANXIOUS)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Anxious.\n";
 	}
-	else if (ANGRY)
+	else if (currentEmotion == ANGRY)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Angry.\n";
 	}
-	else if (SCARED)
+	else if (currentEmotion == SCARED)
 	{
 		cout << "\n\n";
 		cout << "\t\t\tFeeling Scared.\n";
@@ -27,10 +27,13 @@ void SuspectOne::EmotionDialogue()
 SuspectOne::SuspectOne()
 {
 	name = "Steve";
-	currentEmotion = NEUTRAL;
 	if (GetIsLiar() || GetIsKiller())
 	{
-		currentEmotion = ANXIOUS;
+		SetEmotion(ANXIOUS);
+	}
+	else
+	{
+		SetEmotion(NEUTRAL);
 	}
 }
 
@@ -52,6 +55,13 @@ Emotions SuspectOne::SetEmotion(Emotions changeEmotion)
 void SuspectOne::GetPreviousEmotion()
 {
 	cout << "\t\t\t" << previousEmotion << "\n\n" << endl;
+}
+
+void SuspectOne::ResetSuspect()
+{
+	SetIsLiar(false);
+	SetIsKiller(false);
+	SetEmotion(NEUTRAL);
 }
 
 void SuspectOne::GetName()
@@ -97,37 +107,37 @@ void SuspectOne::SuspectDialogue()
 void SuspectOne::NeutralDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tNEUTRAL DIALOGUE\n\n";
+	cout << "\t\t\tIm to drunk to function...coudznt have beens me...\n\n";
 }
 
 void SuspectOne::LiarDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tLIAR DIALOGUE\n\n";
+	cout << "\t\t\tI was dancing with Michelle.\n\n";
 }
 
 void SuspectOne::AccusedDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tACCUSED DIALOGUE\n\n";
-	currentEmotion = ANGRY;
+	cout << "\t\t\t HOW DARE YOU  ACCUSE ME!\n\n";
+	SetEmotion(ANGRY);
 }
 
 void SuspectOne::AccusedLiarDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
-	currentEmotion = SCARED;
+	cout << "\t\t\terrrm...uummm..ask ~insert other liar here~\n\n";
+	SetEmotion(SCARED);
 }
 
 void SuspectOne::KillerDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tKILLER DIALOGUE\n\n";
+	cout << "\t\t\tThey deserved it! and i would have gotten away with it if it wasnt for you meddling kids!\n\n";
 }
 
 void SuspectOne::NotKillerDialogue()
 {
 	cout << "\n\n\n";
-	cout << "\t\t\tNOT KILLER DIALOGUE\n\n";
+	cout << "\t\t\tWHOA WHOA WHOA! I'm innocent!\n\n";
 }
