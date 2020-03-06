@@ -2,19 +2,44 @@
 
 void SuspectOne::EmotionDialogue()
 {
+	if (NEUTRAL)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Neutral.\n";
+	}
+	else if (ANXIOUS)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Anxious.\n";
+	}
+	else if (ANGRY)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Angry.\n";
+	}
+	else if (SCARED)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Scared.\n";
+	}
 }
 
 SuspectOne::SuspectOne()
 {
 	name = "Steve";
+	currentEmotion = NEUTRAL;
+	if (GetIsLiar() || GetIsKiller())
+	{
+		currentEmotion = ANXIOUS;
+	}
 }
 
 SuspectOne::~SuspectOne()
 {}
 
-Emotions SuspectOne::GetEmotion()
+void SuspectOne::GetEmotion()
 {
-	return currentEmotion;
+	cout << "\t\t\t" << currentEmotion << "\n\n" << endl;
 }
 
 Emotions SuspectOne::SetEmotion(Emotions changeEmotion)
@@ -24,10 +49,11 @@ Emotions SuspectOne::SetEmotion(Emotions changeEmotion)
 	return currentEmotion;
 }
 
-Emotions SuspectOne::GetPreviousEmotion()
+void SuspectOne::GetPreviousEmotion()
 {
-	return previousEmotion;
+	cout << "\t\t\t" << previousEmotion << "\n\n" << endl;
 }
+
 void SuspectOne::GetName()
 {
 	cout << "\t\t\t" << name << "\n" << endl;
@@ -58,11 +84,11 @@ bool SuspectOne::SetIsKiller(bool newKiller)
 
 void SuspectOne::SuspectDialogue()
 {
-	if (isLiar)
+	if (GetIsLiar())
 	{
 		LiarDialogue();
 	}
-	else if (!isLiar)
+	else if (!GetIsLiar())
 	{
 		NeutralDialogue();
 	}
@@ -84,12 +110,14 @@ void SuspectOne::AccusedDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED DIALOGUE\n\n";
+	currentEmotion = ANGRY;
 }
 
 void SuspectOne::AccusedLiarDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
+	currentEmotion = SCARED;
 }
 
 void SuspectOne::KillerDialogue()

@@ -2,20 +2,45 @@
 
 void SuspectFive::EmotionDialogue()
 {
+	if (NEUTRAL)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tEmotion: Feeling Neutral.\n";
+	}
+	else if (ANXIOUS)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tEmotion: Feeling Anxious.\n";
+	}
+	else if (ANGRY)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Angry.\n";
+	}
+	else if (SCARED)
+	{
+		cout << "\n\n";
+		cout << "\t\t\tFeeling Scared.\n";
+	}
 }
 
 SuspectFive::SuspectFive()
 {
 	name = "Mike";
+	currentEmotion = NEUTRAL;
+	if (GetIsLiar() || GetIsKiller())
+	{
+		currentEmotion = ANXIOUS;
+	}
 }
 
 SuspectFive::~SuspectFive()
 {
 }
 
-Emotions SuspectFive::GetEmotion()
+void SuspectFive::GetEmotion()
 {
-	return currentEmotion;
+	cout << "\t\t\t" << currentEmotion << "\n\n" << endl;
 }
 
 Emotions SuspectFive::SetEmotion(Emotions changeEmotion)
@@ -25,32 +50,39 @@ Emotions SuspectFive::SetEmotion(Emotions changeEmotion)
 	return currentEmotion;
 }
 
-Emotions SuspectFive::GetPreviousEmotion()
+void SuspectFive::GetPreviousEmotion()
 {
-	return previousEmotion;
+	cout << "\t\t\t" << previousEmotion << "\n\n" << endl;
 }
+
+
 void SuspectFive::GetName()
 {
 	cout << "\t\t\t" << name << "\n" << endl;
 }
+
 string SuspectFive::SetName(string newName)
 {
 	name = newName;
 	return name;
 }
+
 bool SuspectFive::GetIsLiar()
 {
 	return isLiar;
 }
+
 bool SuspectFive::SetIsLiar(bool changeState)
 {
 	isLiar = changeState;
 	return isLiar;
 }
+
 bool SuspectFive::GetIsKiller()
 {
 	return isKiller;
 }
+
 bool SuspectFive::SetIsKiller(bool newKiller)
 {
 	isKiller = newKiller;
@@ -59,11 +91,11 @@ bool SuspectFive::SetIsKiller(bool newKiller)
 
 void SuspectFive::SuspectDialogue()
 {
-	if (isLiar)
+	if (GetIsLiar())
 	{
 		LiarDialogue();
 	}
-	else if (!isLiar)
+	else if (!GetIsLiar())
 	{
 		NeutralDialogue();
 	}
@@ -85,12 +117,14 @@ void SuspectFive::AccusedDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED DIALOGUE\n\n";
+	currentEmotion = ANGRY;
 }
 
 void SuspectFive::AccusedLiarDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tACCUSED LIAR DIALOGUE\n\n";
+	currentEmotion = SCARED;
 }
 
 void SuspectFive::KillerDialogue()

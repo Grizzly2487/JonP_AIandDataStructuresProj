@@ -136,7 +136,7 @@ void CaseTwo::QuestionSuspect()
 void CaseTwo::CheckEmotion()
 {
 	hoursLeft = hoursLeft - 1;
-	cout << SuspectPool::GetInstance()->GetSuspectIterator()->GetEmotion() << endl;
+	SuspectPool::GetInstance()->GetSuspectIterator()->EmotionDialogue();
 }
 
 void CaseTwo::Accuse()

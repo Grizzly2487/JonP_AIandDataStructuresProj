@@ -18,17 +18,17 @@ protected:
 	bool isKiller = false;
 
 	Emotions defaultEmotion = NEUTRAL;
-	Emotions currentEmotion = defaultEmotion;
+	Emotions currentEmotion;
 	Emotions previousEmotion = NEUTRAL;
 	Emotions* emotions;
 
 public:
 
 	//Functions for suspects
-	virtual Emotions GetEmotion() = 0;
+	virtual void GetEmotion() = 0;
 	virtual Emotions SetEmotion(Emotions changeEmotion) = 0;
-	virtual Emotions GetPreviousEmotion() = 0;
-	
+	virtual void GetPreviousEmotion() = 0;
+
 	virtual void GetName() = 0;
 	virtual string SetName(string newName) = 0;
 	

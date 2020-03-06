@@ -16,9 +16,9 @@ protected:
 	int hoursLeft = 48;
 
 	int mOption;
-	int qOption;
+	int qOption;	
+	int qOption2;
 	int aOption;
-	int sOption;
 	int suspect;
 
 	bool isChoosingQ = true;
@@ -26,6 +26,7 @@ protected:
 	bool isChoosingS = true;
 	bool isQuestioning = true;
 	bool isAccusing = true;
+	bool isBelieving = true;
 	bool isOnCase = false;
 	bool isSolved = false;
 

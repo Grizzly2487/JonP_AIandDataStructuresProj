@@ -79,11 +79,6 @@ void CaseOne::StartCase()
 				break;
 			}
 		}
-		if (GetHoursLeft() <= 0)
-		{
-			GameOverDialogue();
-			isOnCase = false;
-		}
 	}
 }	
 
@@ -150,7 +145,7 @@ void CaseOne::QuestionSuspect()
 void CaseOne::CheckEmotion()
 {
 	hoursLeft = hoursLeft - 1;
-	cout << SuspectPool::GetInstance()->GetSuspectIterator()->GetEmotion() << endl;
+	SuspectPool::GetInstance()->GetSuspectIterator()->EmotionDialogue();
 }
 
 void CaseOne::Accuse()
@@ -189,6 +184,7 @@ void CaseOne::Accuse()
 			{
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
+				//Accusing stage
 				AccusationStage();
 				break;
 			}
@@ -248,6 +244,7 @@ void CaseOne::SolveCase()
 			{
 				hoursLeft = hoursLeft - 1;
 				system("CLS");
+				//Solving stage
 				SolvingStage();
 				isChoosingS = false;
 				break;
@@ -297,7 +294,43 @@ void CaseOne::QuestioningStage()
 			}
 			case 2:
 			{
-				system("CLS");
+				while (isBelieving)
+				{
+					system("CLS");
+					if (SuspectPool::GetInstance()->GetSuspectIterator()->GetIsLiar())
+					{
+						hoursLeft = hoursLeft + 1;
+						cout << "\n\n";
+						cout << "\t\t\tYou believe them, but they look shady...\n";
+					}
+					else if (!SuspectPool::GetInstance()->GetSuspectIterator()->GetIsLiar())
+					{
+						cout << "\n\n";
+						cout << "\t\t\tYou believe them, and they look legit.\n";
+					}
+					cout << "\t\t\tPress 1 to continue:";
+					cin >> qOption2;
+
+					switch (qOption2)
+					{
+						case 1:
+						{
+							hoursLeft = hoursLeft - 1;
+							system("CLS");
+							isBelieving = false;
+							break;
+						}
+						default:
+						{
+							hoursLeft = hoursLeft - 1;
+							system("CLS");
+							cout << "That is not a legal input.\n";
+							break;
+						}
+					}
+				}
+				isBelieving = true;
+				isQuestioning = false;
 				break;
 			}
 			case 3:
@@ -383,6 +416,12 @@ void CaseOne::SolvingStage()
 			hoursLeft = 48;
 			system("CLS");
 			GameOverDialogue();
+			isAccusing = true;
+			isQuestioning = true;
+			isChoosingA = true;
+			isChoosingQ = true;
+			isChoosingS = true;
+			isBelieving = true;
 			isOnCase = false;
 		}
 		else
@@ -392,6 +431,12 @@ void CaseOne::SolvingStage()
 			SuspectPool::GetInstance()->GetSuspectIterator()->KillerDialogue();
 			cout << "\n\n";
 			SolvedDialogue();
+			isAccusing = true;
+			isQuestioning = true;
+			isChoosingA = true;
+			isChoosingQ = true;
+			isChoosingS = true;
+			isBelieving = true;
 			isOnCase = false;
 		}
 }

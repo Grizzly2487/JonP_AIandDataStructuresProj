@@ -136,7 +136,7 @@ void CaseThree::QuestionSuspect()
 void CaseThree::CheckEmotion()
 {
 	hoursLeft = hoursLeft - 1;
-	SuspectPool::GetInstance()->GetSuspectIterator()->GetEmotion();
+	SuspectPool::GetInstance()->GetSuspectIterator()->EmotionDialogue();
 }
 
 void CaseThree::Accuse()

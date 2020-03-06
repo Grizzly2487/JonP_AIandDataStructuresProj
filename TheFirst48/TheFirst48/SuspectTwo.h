@@ -11,9 +11,9 @@ protected:
 public:
 
 	//functions for suspects
-	virtual Emotions GetEmotion()override;
+	virtual void GetEmotion()override;
 	virtual Emotions SetEmotion(Emotions changeEmotion)override;
-	virtual Emotions GetPreviousEmotion()override;
+	virtual void GetPreviousEmotion()override;
 
 	virtual void GetName()override;
 	virtual string SetName(string newName)override;
