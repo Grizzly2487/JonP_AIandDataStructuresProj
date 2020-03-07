@@ -3,10 +3,11 @@
 void CaseThree::CaseDialogue()
 {
 	cout << "\t\___________________________________________________________________________________________________________\n";
-	cout << "\t|||At a highschool reunion, where everyone dresses like it was the 20's everyone was having a grand soiree.|\n"; 
-	cout << "\t|||everyone was having a grand soiree.The Punch bowl was spiked,and the floor was popping.Dresses and Suits|\n";
-	cout << "\t|||swinging to the beat.When a blood curdling scream stops the music and the party to a dead stop. The body|\n";
-	cout << "\t|||of one of the students is found in the main hall outside the auditorium everyone was just in............|\n\n\n";//have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t|||The night was dark with no moon or stars in sight.A group of teenagers headed out to a local farm to see|\n"; 
+	cout << "\t|||what their friends told them.That there was weird lights in the sky and that they had to hurry or else  |\n";
+	cout << "\t|||they may be gone before they got there.When the group arrived,the friends were just standing there and a|\n";
+	cout << "\t|||crop circle with the body of one of their friends in the middle of it pale and naked with all clothes   |\n\n\n";//have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t|||and hair removed from his body.The Group asked their friends what happened but none spoke...............|\n";
 }
 
 void CaseThree::SolvedDialogue()

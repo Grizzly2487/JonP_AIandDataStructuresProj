@@ -108,11 +108,13 @@ void SuspectTwo::NeutralDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI'm a close friend of the deceased.\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tPurple...Red...Green...Yellow...Purple...\n\n";
 	}
 }
 
@@ -125,11 +127,13 @@ void SuspectTwo::LiarDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tThis is all news to me I just got here not long ago...I was late.\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI didnt see anything.\n\n";
 	}
 }
 

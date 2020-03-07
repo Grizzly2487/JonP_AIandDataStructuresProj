@@ -108,11 +108,13 @@ void SuspectThree::NeutralDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI'm the widow of the deceased...~cries~\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\t~Screaming and looks like shes in shock.\n\n";
 	}
 }
 
@@ -125,11 +127,13 @@ void SuspectThree::LiarDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI have no idea what I was doing, I'm the widow of the deceased..~cries~\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tThere was this little alien thing running around I swear!\n\n";
 	}
 }
 

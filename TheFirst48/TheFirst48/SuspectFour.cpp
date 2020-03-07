@@ -108,11 +108,13 @@ void SuspectFour::NeutralDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was a paul bearer with mike..\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tALIENS!!!IT WAS ALIENS!!!\n\n";
 	}
 }
 
@@ -125,11 +127,13 @@ void SuspectFour::LiarDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI arrived late to the funeral and found this.\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI couldnt see anything because it was to dark.\n\n";
 	}
 }
 

@@ -3,10 +3,10 @@
 void CaseTwo::CaseDialogue()
 {
 	cout << "\t\___________________________________________________________________________________________________________\n";
-	cout << "\t||At a highschool reunion, where everyone dresses like it was the 20's everyone was having a grand soiree.||\n";
-	cout << "\t||everyone was having a grand soiree.The Punch bowl was spiked,and the floor was popping.Dresses and Suits||\n";
-	cout << "\t||swinging to the beat.When a blood curdling scream stops the music and the party to a dead stop. The body||\n";
-	cout << "\t||of one of the students is found in the main hall outside the auditorium everyone was just in............||\n\n\n"; //have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t||It was the worst day ever..thunderstorm was rolling in and the wind was blowing.The lightning and thunder||\n";
+	cout << "\t||were off in the distance, but the rain was coming.The funeral had just finished up and the casket was on ||\n";
+	cout << "\t||the way out the door.As the doors opened,a ladies shrill scream with thunder pierces the air.A man's body||\n";
+	cout << "\t||was laying there covered in stab wounds and a note that said ~I KNOW WHAT YOU DID~ written on it.........||\n\n\n"; //have the 3 \n on the last line of dialogue to create the space between the text and choice menu
 }
 
 void CaseTwo::SolvedDialogue()

@@ -114,11 +114,13 @@ void SuspectFive::NeutralDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was a paul bearer in the funeral..\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was watching the lights and next I know....~cries~\n\n";
 	}
 }
 
@@ -131,11 +133,13 @@ void SuspectFive::LiarDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was having a smoke out back.\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was watching the lights in the sky.\n\n";
 	}
 }
 

@@ -108,11 +108,13 @@ void SuspectSix::NeutralDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI'm a close friend of the deceased..\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tWHAT!? I CANT HEAR ANYTHING!!\n\n";
 	}
 }
 
@@ -125,11 +127,13 @@ void SuspectSix::LiarDialogue()
 	}
 	else if (currentCase == Ecase::Two)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tI was a paul bearer with mike.\n\n";
 	}
 	else if (currentCase == Ecase::Three)
 	{
-
+		cout << "\n\n\n";
+		cout << "\t\t\tThere was a bright flash of light and all his clothes and hair burnt off.\n\n";
 	}
 }
 
