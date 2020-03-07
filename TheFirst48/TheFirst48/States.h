@@ -8,3 +8,11 @@ enum Emotions
 	ANGRY,
 	SCARED
 }; 
+enum Ecase
+{
+	One,
+	Two,
+	Three,
+
+	MAX
+};

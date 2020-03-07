@@ -13,7 +13,6 @@ public:
 	//functions for suspects
 	virtual void GetEmotion()override;
 	virtual Emotions SetEmotion(Emotions changeEmotion)override;
-	virtual void GetPreviousEmotion()override;
 
 	virtual void ResetSuspect()override;
 

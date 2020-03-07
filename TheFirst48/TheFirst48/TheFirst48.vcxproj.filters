@@ -87,6 +87,9 @@
     <ClCompile Include="SuspectTwo.cpp">
       <Filter>Source Files\Suspects</Filter>
     </ClCompile>
+    <ClCompile Include="Cases.cpp">
+      <Filter>Source Files\Cases</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SuspectPool.h">
@@ -134,7 +137,7 @@
     <ClInclude Include="SuspectTwo.h">
       <Filter>Header Files\Suspects</Filter>
     </ClInclude>
-    <ClInclude Include="Emotions.h">
+    <ClInclude Include="States.h">
       <Filter>Header Files\FSMs</Filter>
     </ClInclude>
   </ItemGroup>

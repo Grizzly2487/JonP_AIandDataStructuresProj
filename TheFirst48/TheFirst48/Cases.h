@@ -1,6 +1,6 @@
 #pragma once
 #include "SuspectPool.h"
-#include "Emotions.h"
+#include "States.h"
 #include <iostream>
 #include <string>
 
@@ -52,8 +52,8 @@ public:
 	virtual void SolvingStage() = 0;
 
 	virtual int GetHoursLeft() = 0;
-	Cases() {};
-	~Cases() {};
+	Cases();
+	~Cases();
 
 
 

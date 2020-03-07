@@ -452,6 +452,7 @@ int CaseOne::GetHoursLeft()
 CaseOne::CaseOne()
 {
 	SuspectPool::GetInstance()->ResetSuspects();
+	SuspectPool::GetInstance()->GetSuspectIterator()->SetCurrentCase(Ecase::One);
 }
 
 CaseOne::~CaseOne()

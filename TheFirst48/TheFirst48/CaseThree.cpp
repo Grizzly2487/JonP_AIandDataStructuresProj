@@ -385,6 +385,7 @@ int CaseThree::GetHoursLeft()
 CaseThree::CaseThree()
 {
 	SuspectPool::GetInstance()->ResetSuspects();
+	SuspectPool::GetInstance()->GetSuspectIterator()->SetCurrentCase(Ecase::Three);
 }
 
 CaseThree::~CaseThree()
