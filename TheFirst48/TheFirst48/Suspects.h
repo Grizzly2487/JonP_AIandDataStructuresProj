@@ -2,16 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Emotions.h"
-#include "CasePool.h"
 
-//enum Ecase
-//{
-//	One,
-//	Two,
-//	Three,
-//
-//	MAX
-//};
 
 using namespace std;
 class Suspects
@@ -26,8 +17,6 @@ protected:
 	bool isLiar = false;
 	bool isKiller = false;
 
-	//Ecase currentCase;
-
 	Emotions defaultEmotion = NEUTRAL;
 	Emotions currentEmotion;
 	Emotions previousEmotion;
@@ -39,9 +28,6 @@ public:
 	virtual Emotions SetEmotion(Emotions changeEmotion) = 0;
 	virtual void GetPreviousEmotion() = 0;
 	virtual void ResetSuspect();
-	//void SetCurrentCase(Ecase CurCase);
-	//Ecase GetCurrentCase();
-
 
 	virtual void GetName() = 0;
 	virtual string SetName(string newName) = 0;
