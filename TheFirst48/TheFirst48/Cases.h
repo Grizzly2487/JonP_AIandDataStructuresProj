@@ -27,7 +27,7 @@ protected:
 	bool isQuestioning = true;
 	bool isAccusing = true;
 	bool isBelieving = true;
-	bool isOnCase = false;
+	bool isOnCase = true;
 	bool isSolved = false;
 
 public:
@@ -52,10 +52,8 @@ public:
 	virtual void SolvingStage() = 0;
 
 	virtual int GetHoursLeft() = 0;
-	Cases() {};
-	~Cases() {};
-
-
+	Cases();
+	~Cases();
 
 };
 

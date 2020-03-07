@@ -29,7 +29,6 @@ void CaseOne::GameOverDialogue()
 void CaseOne::StartCase()
 {
 	SuspectPool::GetInstance()->ChooseCulprits();
-	isOnCase = true;
 	while (isOnCase)
 	{
 		cout << "\n";
@@ -83,6 +82,7 @@ void CaseOne::StartCase()
 			}
 		}
 	}
+	isOnCase = true;
 }	
 
 void CaseOne::QuestionSuspect()
@@ -452,6 +452,8 @@ int CaseOne::GetHoursLeft()
 CaseOne::CaseOne()
 {
 	SuspectPool::GetInstance()->ResetSuspects();
+	//SuspectPool::GetInstance()->GetSuspectIterator()->SetCurrentCase(Ecase::One);
+
 }
 
 CaseOne::~CaseOne()

@@ -108,12 +108,36 @@ void SuspectOne::NeutralDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tIm to drunk to function...coudznt have beens me...\n\n";
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+
+	//}
 }
 
 void SuspectOne::LiarDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tI was dancing with Michelle.\n\n";
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+
+	//}
 }
 
 void SuspectOne::AccusedDialogue()
@@ -121,6 +145,22 @@ void SuspectOne::AccusedDialogue()
 	cout << "\n\n\n";
 	cout << "\t\t\t HOW DARE YOU  ACCUSE ME!\n\n";
 	SetEmotion(ANGRY);
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\t HOW DARE YOU  ACCUSE ME!\n\n";
+	//	SetEmotion(ANGRY);
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\t HOW DARE YOU  ACCUSE ME!\n\n";
+	//	SetEmotion(ANGRY);
+	//}
 }
 
 void SuspectOne::AccusedLiarDialogue()
@@ -128,16 +168,60 @@ void SuspectOne::AccusedLiarDialogue()
 	cout << "\n\n\n";
 	cout << "\t\t\terrrm...uummm..ask ~insert other liar here~\n\n";
 	SetEmotion(SCARED);
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\terrrm...uummm..ask ~insert other liar here~\n\n";
+	//	SetEmotion(SCARED);
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\terrrm...uummm..ask ~insert other liar here~\n\n";
+	//	SetEmotion(SCARED);
+	//}
 }
 
 void SuspectOne::KillerDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tThey deserved it! and i would have gotten away with it if it wasnt for you meddling kids!\n\n";
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\tThey deserved it! and i would have gotten away with it if it wasnt for you meddling kids!\n\n";
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\tThey deserved it! and i would have gotten away with it if it wasnt for you meddling kids!\n\n";
+	//}
 }
 
 void SuspectOne::NotKillerDialogue()
 {
 	cout << "\n\n\n";
 	cout << "\t\t\tWHOA WHOA WHOA! I'm innocent!\n\n";
+	//if (currentCase == Ecase::One)
+	//{
+
+	//}
+	//else if (currentCase == Ecase::Two)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\tWHOA WHOA WHOA! I'm innocent!\n\n";
+	//}
+	//else if (currentCase == Ecase::Three)
+	//{
+	//	cout << "\n\n\n";
+	//	cout << "\t\t\tWHOA WHOA WHOA! I'm innocent!\n\n";
+	//}
 }
