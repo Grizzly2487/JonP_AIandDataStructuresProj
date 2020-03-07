@@ -15,6 +15,9 @@ class SuspectPool
 {
 private:
 
+	int cArray[3];
+	Suspects* liarPool[3];
+
 	static SuspectPool* instance;
 
 	LinkList<Suspects*> suspects;
@@ -35,7 +38,6 @@ public:
 	unsigned GetSize(); //Gets the size of the pool.
 	void IncrementIterator();
 	void DecrementIterator();
-
 	SuspectPool();
 	~SuspectPool();
 

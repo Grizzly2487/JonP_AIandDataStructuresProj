@@ -17,8 +17,6 @@ Suspects* SuspectPool::GetSuspectIterator()
 
 void SuspectPool::ChooseCulprits()
 {
-	int cArray[3];
-	Suspects* liarPool[3];
 	srand(time(NULL));
 	for (int i = 0; i < 3; i++)
 	{
