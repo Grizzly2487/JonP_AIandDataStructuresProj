@@ -28,58 +28,65 @@ void CaseThree::StartCase()
 	SuspectPool::GetInstance()->ChooseCulprits();
 	while (isOnCase)
 	{
-		cout << "\n";
-		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
-		cout << "\n\n\n";
-		cout << "\t\t\t What option would you like to pursue\n";
-		cout << "\n\n";
-		cout << "\t\t\tQuestion Suspect = Press 1\n";
-		cout << "\t\t\tAccuse Suspect = Press 2\n";
-		cout << "\t\t\tSolve the case = Press 3\n";
-		cout << "\t\t\tQuit to Main Menu = Press 4\n\n";
-		cout << "\t\t\tOption: ";
-		cin >> mOption;
-		cin.clear();
-
-		switch (mOption)
+		if (!hoursLeft <= 0)
 		{
-			case 1:
+			cout << "\n";
+			cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
+			cout << "\n\n\n";
+			cout << "\t\t\t What option would you like to pursue\n";
+			cout << "\n\n";
+			cout << "\t\t\tQuestion Suspect = Press 1\n";
+			cout << "\t\t\tAccuse Suspect = Press 2\n";
+			cout << "\t\t\tSolve the case = Press 3\n";
+			cout << "\t\t\tQuit to Main Menu = Press 4\n\n";
+			cout << "\t\t\tOption: ";
+			cin >> mOption;
+			cin.clear();
+
+			switch (mOption)
 			{
-				hoursLeft = hoursLeft - 1;
-				system("CLS");
-				QuestionSuspect();
-				break;
-			}
-			case 2:
-			{
-				hoursLeft = hoursLeft - 1;
-				system("CLS");
-				Accuse();
-				break;
-			}
-			case 3:
-			{
-				hoursLeft = hoursLeft - 1;
-				system("CLS");
-				SolveCase();
-				break;
-			}
-			case 4:
-			{
-				hoursLeft = 48;
-				system("CLS");
-				isOnCase = false;
-				break;
-			}
-			default:
-			{
-				hoursLeft = hoursLeft - 1;
-				system("CLS");
-				cout << "That is not a legal input.\n";
-				break;
+				case 1:
+				{
+					hoursLeft = hoursLeft - 1;
+					system("CLS");
+					QuestionSuspect();
+					break;
+				}
+				case 2:
+				{
+					hoursLeft = hoursLeft - 1;
+					system("CLS");
+					Accuse();
+					break;
+				}
+				case 3:
+				{
+					hoursLeft = hoursLeft - 1;
+					system("CLS");
+					SolveCase();
+					break;
+				}
+				case 4:
+				{
+					hoursLeft = 48;
+					system("CLS");
+					isOnCase = false;
+					break;
+				}
+				default:
+				{
+					hoursLeft = hoursLeft - 1;
+					system("CLS");
+					cout << "That is not a legal input.\n";
+					break;
+				}
 			}
 		}
-
+		else if(hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isOnCase = false;
+		}
 	}
 	isOnCase = true;
 }
@@ -88,6 +95,12 @@ void CaseThree::QuestionSuspect()
 {
 	while (isChoosingQ)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingQ = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -155,6 +168,12 @@ void CaseThree::Accuse()
 {
 	while (isChoosingA)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingA = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -216,6 +235,12 @@ void CaseThree::SolveCase()
 {
 	while (isChoosingS)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingS = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -277,6 +302,12 @@ void CaseThree::QuestioningStage()
 {
 	while (isQuestioning)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isQuestioning = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -332,6 +363,12 @@ void CaseThree::AccusationStage()
 {
 	while (isAccusing)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isAccusing = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";

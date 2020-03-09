@@ -27,7 +27,7 @@ void CaseTwo::StartCase()
 	SuspectPool::GetInstance()->ChooseCulprits();
 	while (isOnCase)
 	{
-		if (hoursLeft != 0)
+		if (!hoursLeft <= 0)
 		{
 			cout << "\n";
 			cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
@@ -80,7 +80,7 @@ void CaseTwo::StartCase()
 				}
 			}
 		}
-		else
+		else if (hoursLeft <= 0)
 		{
 			GameOverDialogue();
 			isOnCase = false;
@@ -93,6 +93,12 @@ void CaseTwo::QuestionSuspect()
 {
 	while (isChoosingQ)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingQ = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -160,6 +166,12 @@ void CaseTwo::Accuse()
 {
 	while (isChoosingA)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingA = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -220,6 +232,12 @@ void CaseTwo::SolveCase()
 {
 	while (isChoosingS)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isChoosingS = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -280,6 +298,12 @@ void CaseTwo::QuestioningStage()
 {
 	while (isQuestioning)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isQuestioning = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
@@ -335,6 +359,12 @@ void CaseTwo::AccusationStage()
 {
 	while (isAccusing)
 	{
+		if (hoursLeft <= 0)
+		{
+			GameOverDialogue();
+			isAccusing = false;
+			isOnCase = false;
+		}
 		cout << "\n";
 		cout << "\t\t\t\t\t\t\tHours Left: " << hoursLeft << "\n";
 		cout << "\n\n\n";
