@@ -30,7 +30,7 @@ protected:
 public:
 
 	static SuspectPool* GetInstance();
-	Suspects* GetSuspectIterator();
+	Suspects* GetSuspectIterator(bool resetIterator = false);
 
 	//Functions
 	void ChooseCulprits(); //Randomize Suspects and Choose 3 to be the Liars, and 1 Killer of the 3 Liars.

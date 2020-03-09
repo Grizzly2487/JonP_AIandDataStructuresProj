@@ -6,8 +6,8 @@ void CaseThree::CaseDialogue()
 	cout << "\t|||The night was dark with no moon or stars in sight.A group of teenagers headed out to a local farm to see|\n"; 
 	cout << "\t|||what their friends told them.That there was weird lights in the sky and that they had to hurry or else  |\n";
 	cout << "\t|||they may be gone before they got there.When the group arrived,the friends were just standing there and a|\n";
-	cout << "\t|||crop circle with the body of one of their friends in the middle of it pale and naked with all clothes   |\n\n\n";//have the 3 \n on the last line of dialogue to create the space between the text and choice menu
-	cout << "\t|||and hair removed from his body.The Group asked their friends what happened but none spoke...............|\n";
+	cout << "\t|||crop circle with the body of one of their friends in the middle of it pale and naked with all clothes   |\n";//have the 3 \n on the last line of dialogue to create the space between the text and choice menu
+	cout << "\t|||and hair removed from his body.The Group asked their friends what happened but none spoke...............|\n\n\n";
 }
 
 void CaseThree::SolvedDialogue()
@@ -23,7 +23,8 @@ void CaseThree::GameOverDialogue()
 }
 
 void CaseThree::StartCase()
-{
+{	
+	SuspectPool::GetInstance()->GetSuspectIterator()->SetCurrentCase(Ecase::Three);
 	SuspectPool::GetInstance()->ChooseCulprits();
 	while (isOnCase)
 	{
@@ -33,48 +34,54 @@ void CaseThree::StartCase()
 		cout << "\t\t\t What option would you like to pursue\n";
 		cout << "\n\n";
 		cout << "\t\t\tQuestion Suspect = Press 1\n";
-		cout << "\t\t\tCheck Emotion of Suspect = Press 2\n";
-		cout << "\t\t\tAccuse Suspect = Press 3\n";
-		cout << "\t\t\tSolve the case = Press 4\n\n";
-		cout << "\t\t\tQuit to Main Menu = Press 5\n\n";
+		cout << "\t\t\tAccuse Suspect = Press 2\n";
+		cout << "\t\t\tSolve the case = Press 3\n";
+		cout << "\t\t\tQuit to Main Menu = Press 4\n\n";
 		cout << "\t\t\tOption: ";
 		cin >> mOption;
+		cin.clear();
 
 		switch (mOption)
 		{
-		case 1:
-		{
-			QuestionSuspect();
-			break;
-		}
-		case 2:
-		{
-			CheckEmotion();
-			break;
-		}
-		case 3:
-		{
-			Accuse();
-			break;
-		}
-		case 4:
-		{
-			SolveCase();
-			break;
-		}
-		case 5:
-		{
-			isOnCase = false;
-			break;
-		}
-		default:
-		{
-			cout << "That is not a legal input.\n";
-			break;
-		}
+			case 1:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				QuestionSuspect();
+				break;
+			}
+			case 2:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				Accuse();
+				break;
+			}
+			case 3:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				SolveCase();
+				break;
+			}
+			case 4:
+			{
+				hoursLeft = 48;
+				system("CLS");
+				isOnCase = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
 		}
 
 	}
+	isOnCase = true;
 }
 
 void CaseThree::QuestionSuspect()
@@ -92,46 +99,47 @@ void CaseThree::QuestionSuspect()
 		cout << "\t\t\tStop Questioning = Press 4\n\n";
 		cout << "\t\t\tSuspect: ";
 		cin >> suspect;
+		cin.clear();
 
 		switch (suspect)
 		{
-		case 1:
-		{
-			system("CLS");
-			//go to previous suspect
-			SuspectPool::GetInstance()->DecrementIterator();
-			break;
-		}
-		case 2:
-		{
-			system("CLS");
-			//go to next suspect
-			SuspectPool::GetInstance()->IncrementIterator();
-			break;
-		}
-		case 3:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			//questioning stage
-			QuestioningStage();
-			break;
-		}
-		case 4:
-		{
-			hoursLeft = hoursLeft - 1;
-			//Back out of questioning
-			system("CLS");
-			isChoosingQ = false;
-			break;
-		}
-		default:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			cout << "That is not a legal input.\n";
-			break;
-		}
+			case 1:
+			{
+				system("CLS");
+				//go to previous suspect
+				SuspectPool::GetInstance()->DecrementIterator();
+				break;
+			}
+			case 2:
+			{
+				system("CLS");
+				//go to next suspect
+				SuspectPool::GetInstance()->IncrementIterator();
+				break;
+			}
+			case 3:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				//questioning stage
+				QuestioningStage();
+				break;
+			}
+			case 4:
+			{
+				hoursLeft = hoursLeft - 1;
+				//Back out of questioning
+				system("CLS");
+				isChoosingQ = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
 		}
 	}
 	isChoosingQ = true;
@@ -158,45 +166,47 @@ void CaseThree::Accuse()
 		cout << "\t\t\tStop Accusation = Press 4\n";
 		cout << "\n";
 		cin >> suspect;
+		cin.clear();
 
 		switch (suspect)
 		{
-		case 1:
-		{
-			system("CLS");
-			//go to previous suspect
-			SuspectPool::GetInstance()->DecrementIterator();
-			break;
-		}
-		case 2:
-		{
-			system("CLS");
-			//go to next suspect
-			SuspectPool::GetInstance()->IncrementIterator();
-			break;
-		}
-		case 3:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			//Accusation stage
-			break;
-		}
-		case 4:
-		{
-			hoursLeft = hoursLeft - 1;
-			//Back out of accusation
-			system("CLS");
-			isChoosingA = false;
-			break;
-		}
-		default:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			cout << "That is not a legal input.\n";
-			break;
-		}
+			case 1:
+			{
+				system("CLS");
+				//go to previous suspect
+				SuspectPool::GetInstance()->DecrementIterator();
+				break;
+			}
+			case 2:
+			{
+				system("CLS");
+				//go to next suspect
+				SuspectPool::GetInstance()->IncrementIterator();
+				break;
+			}
+			case 3:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				//Accusation stage
+				AccusationStage();
+				break;
+			}
+			case 4:
+			{
+				hoursLeft = hoursLeft - 1;
+				//Back out of accusation
+				system("CLS");
+				isChoosingA = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
 		}
 	}
 	isChoosingA = true;
@@ -217,45 +227,47 @@ void CaseThree::SolveCase()
 		cout << "\t\t\tContinue With Case = Press 4\n";
 		cout << "\n";
 		cin >> suspect;
+		cin.clear();
 
 		switch (suspect)
 		{
-		case 1:
-		{
-			system("CLS");
-			//go to previous suspect
-			SuspectPool::GetInstance()->DecrementIterator();
-			break;
-		}
-		case 2:
-		{
-			system("CLS");
-			//go to next suspect
-			SuspectPool::GetInstance()->IncrementIterator();
-			break;
-		}
-		case 3:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			//Solving stage
-			break;
-		}
-		case 4:
-		{
-			hoursLeft = hoursLeft - 1;
-			//Back out of solving.
-			system("CLS");
-			isChoosingS = false;
-			break;
-		}
-		default:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			cout << "That is not a legal input.\n";
-			break;
-		}
+			case 1:
+			{
+				system("CLS");
+				//go to previous suspect
+				SuspectPool::GetInstance()->DecrementIterator();
+				break;
+			}
+			case 2:
+			{
+				system("CLS");
+				//go to next suspect
+				SuspectPool::GetInstance()->IncrementIterator();
+				break;
+			}
+			case 3:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				//Solving stage
+				SolvingStage();
+				break;
+			}
+			case 4:
+			{
+				hoursLeft = hoursLeft - 1;
+				//Back out of solving.
+				system("CLS");
+				isChoosingS = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
 		}
 	}
 	isChoosingS = true;
@@ -276,40 +288,41 @@ void CaseThree::QuestioningStage()
 		cout << "\t\t\tContinue With Case = Press 4\n";
 		cout << "\n";
 		cin >> qOption;
+		cin.clear();
 
 		switch (qOption)
 		{
-		case 1:
-		{
-			system("CLS");
-			AccusationStage();
-			break;
-		}
-		case 2:
-		{
-			system("CLS");
-			break;
-		}
-		case 3:
-		{
-			system("CLS");
-			CheckEmotion();
-			break;
-		}
-		case 4:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			isQuestioning = false;
-			break;
-		}
-		default:
-		{
-			hoursLeft = hoursLeft - 1;
-			system("CLS");
-			cout << "That is not a legal input.\n";
-			break;
-		}
+			case 1:
+			{
+				system("CLS");
+				AccusationStage();
+				break;
+			}
+			case 2:
+			{
+				system("CLS");
+				break;
+			}
+			case 3:
+			{
+				system("CLS");
+				CheckEmotion();
+				break;
+			}
+			case 4:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				isQuestioning = false;
+				break;
+			}
+			default:
+			{
+				hoursLeft = hoursLeft - 1;
+				system("CLS");
+				cout << "That is not a legal input.\n";
+				break;
+			}
 		}
 	}
 	isQuestioning = true;
@@ -338,6 +351,7 @@ void CaseThree::AccusationStage()
 		cout << "\t\t\tContinue With Case = Press 1\n";
 		cout << "\n";
 		cin >> aOption;
+		cin.clear();
 
 		switch (aOption)
 		{
@@ -386,7 +400,6 @@ int CaseThree::GetHoursLeft()
 CaseThree::CaseThree()
 {
 	SuspectPool::GetInstance()->ResetSuspects();
-	SuspectPool::GetInstance()->GetSuspectIterator()->SetCurrentCase(Ecase::Three);
 }
 
 CaseThree::~CaseThree()

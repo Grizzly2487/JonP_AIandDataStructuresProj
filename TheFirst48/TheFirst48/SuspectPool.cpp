@@ -10,8 +10,12 @@ SuspectPool* SuspectPool::GetInstance()
 	return instance;
 }
 
-Suspects* SuspectPool::GetSuspectIterator()
+Suspects* SuspectPool::GetSuspectIterator(bool resetIterator)
 {
+	if (resetIterator)
+	{
+		iterator = suspects.begin();
+	}
 	return *iterator;
 }
 
@@ -39,11 +43,13 @@ void SuspectPool::ChooseCulprits()
 
 void SuspectPool::ResetSuspects()
 {
+	iterator = suspects.begin();
 	for (iterator; iterator != suspects.end(); iterator++)
 	{
 		Suspects* s = *iterator;
 		s->ResetSuspect();
 	}
+	iterator = suspects.begin();
 }
 
 unsigned SuspectPool::GetSize()

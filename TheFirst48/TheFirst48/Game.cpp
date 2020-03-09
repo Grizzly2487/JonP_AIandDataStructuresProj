@@ -23,6 +23,7 @@ Game::Game()
 		cout << "\t\t\tOption: ";
 
 		cin >> choice;
+		//cin.clear();
 
 		switch (choice)
 		{
@@ -83,6 +84,7 @@ void Game::Intro()
 		cout << "\t\t\tPRESS 0 TO CONTINUE\n\n";
 		cout << "\t\t\tContinue: ";
 		cin >> changeScreen;
+		//cin.clear();
 
 		switch (changeScreen)
 		{

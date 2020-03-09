@@ -27,7 +27,7 @@ protected:
 	bool isQuestioning = true;
 	bool isAccusing = true;
 	bool isBelieving = true;
-	bool isOnCase = false;
+	bool isOnCase = true;
 	bool isSolved = false;
 
 public:
